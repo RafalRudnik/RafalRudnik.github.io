@@ -408,6 +408,10 @@ footer p {
     .LiAll {
         height: auto;
     }
+
+    .container {
+        min-width: auto;
+    }
   
     
 }
