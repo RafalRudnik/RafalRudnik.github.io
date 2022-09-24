@@ -405,6 +405,9 @@ footer p {
         letter-spacing: 0em;  
         font-size: 14px;
     }
+    .LiAll {
+        height: auto;
+    }
   
     
 }
