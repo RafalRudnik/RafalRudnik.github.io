@@ -57,6 +57,11 @@ header {
     
 }
 
+header img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 img {
     width: 509px;
     height: 227px;
@@ -281,8 +286,8 @@ header nav ul li a:hover {
 
 .ContactMe img {
     border-radius: 50px;
-    width: 550px;
-    height: 350px;
+    max-width: 450px;
+    max-height: 300px;
     transform: rotate(10deg);
     filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.25));
     /*margin-left: 122px;*/
@@ -377,8 +382,8 @@ footer p {
         flex-direction: column;    
     }
    .Coder {
-    width: 350px;
-    height: 300px;
+    max-width: 350px;
+    max-height: 300px;
    }
 
    .Skills ul {
@@ -387,20 +392,10 @@ footer p {
         max-width: 100%;
         padding-left: 20px;
    }
-    
+   .ContactMe {
+    flex-direction: column;    
+    } 
 }
-
-@media screen and (max-width: 768px) {
-    .ContactMe {
-        flex-direction: column;    
-    }
-   .ContactMe img {
-    width: 300px;
-    height: 170px;
-   }
-    
-}
-
 
 @media screen and (max-width: 768px) {
     .LiAll p {
