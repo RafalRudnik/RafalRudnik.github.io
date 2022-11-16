@@ -5,154 +5,299 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/public/style.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <header id="HomeId">
-            <img src="img/Me_no_bacgroundMe.png" alt="PhotoRafalR"/>
-            <nav>
-                <ul>
-                    <li><a href="#HomeId">HOME</a></li>
-                    <li><a href="#AboutMe">ABOUT</a></li>
-                    <li><a href="#Skills">SKILLS</a></li>
-                    <li><a href="#ContactId">CONTACT</a></li>
-                </ul>
-            </nav>
+    <div class="main container">
+        
+        <header class="header container flex" id="home">
+
+            <div class="logo flex">
+
+                <h2>BNC <span class="span-logo">RAFAŁ RUDNIK</span></h2>
+
+            </div>
+
+            <ul class="nav flex">
+
+                <li>
+                    <a href="#" class="liNav">HOME</a>
+                </li>
+                <li>
+                    <a href="#about-id" class="liNav">ABAOUT</a>
+                </li>
+                <li>
+                    <a href="#skills-id" class="liNav">SKILLS</a>
+                </li>
+                <li>
+                    <a href="#contact-id" class="liNav">CONTACT</a>
+                </li>
+
+            </ul>
+
         </header>
 
+   
 
-        <section class="Home">
-            <div>
-                 <h1><span>Hi</span><br>
-                    My name is Rafał i'm:
-                </h1>
-                <p>
-                    Frontend developer<br>
-                    UI designer<br>
-                    <span style="color: red">I</span><span style="color: #3A9B95"> love</span><span style="color: blue;"> IT!</span>
-                </p><br> 
-                <a href="/Rafal_CV.pdf" target="_blank">Download CV</a>
+        <div class="home-div container flex">
+
+            <div class="home-left">
+
+                <h1 class="h1-class" data-heading="My name is Rafał I'm:">Hi</h1>
+                <p class="p1">Frontend developer</p>
+                <p class="p2">UI sesigner</p>
+                <p class="p3">I <span>love </span>IT!</p>
+
+                <button class="button">
+
+                    <a href="#" class="button-link">Dowload CV</a>
+
+                </button>
+
             </div>
-            <img src="img/BNCBNC2.png" alt="LogoBNC">
-                
-        </section>
 
-        <div class="Separator" id="AboutMe">
-            <h2>About Me:</h2>
-            <a href="#HomeId">Back <img class="strzalka" src="img/Vectorstrzalka.png" alt="Strzalka"></a>
-        </div> 
         
-        <section class="About">
-            <ul>
-                <li class="LiAll LiWhite">
-                    <h2><img src="img/Vectorteczka.png" alt="Suitcase">  Buisness, work:</h2>
-                    <p>
-                        I'm owner of BNC Rafal Rudnik - international forwarding company since 2017. I've decide to change my carrier and enter the world of computer science again. I wish to start from Front-end dev. <br>
-                        I Prefer B&B contracts over full time and appreciate flexible working hours,opportunity to elevate as worker, programmer and person.
-                    </p>
-                </li>
-                <li class="LiAll LiGrey">
-                    <h2><img src="img/Vectorokulary.png" alt="Glases">  Plans, science:</h2>
-                    <p> 
-                        I've studied computer science at Zielona Gora University - Poland. 
-                        Finished Cicso CCNA Academy.
-                        Learning Frontend development, myself. At this point I'm learning Java Script, later React and Apple Swift or Python.
-                        <br>Languages: English and Polish - national. 
-
-                    </p>
-                </li>
-                <li class="LiAll LiGreen">
-                    <h2><img src="img/Vectorhobby.png" alt="Hobbies">  Hobby:</h2>
-                    <p>
-                        I'm fan of video games, good movies - thrillers. 
-                        Walk on beach, spending time with my son - Lego building.<br>
-                        My hobby is also coding. I wish to treat my work as fun, do it with smile. Only then i can work with passion.
-                    </p>
-                </li>
-                <li class="LiAll LiWhite">
-                    <h2><img src="img/Vectorsport.png" alt="Sport">  Sport:</h2>
-                    <p>
-                        I'm big fan of NBA Basketball. Favorite player and sport icon Allen Iverson. Like to watch athletic competitions, ride a bike. 
-                    </p>
-                </li>
-            </ul>
-
-        </section>
-
-        <div class="Separator" id="Skills">
-            <h2>Skills:</h2>
-            <a href="#HomeId">Back <img class="strzalka" src="img/Vectorstrzalka.png" alt="Strzalka"></a>
-        </div> 
-
-        <section class="Skills">
-            <ul>
-                <li><h3>HTML</h3>
-                    <p>
-                        Good knowagle of HTML language
-                    </p>
-                </li>
-                <Li><h3>CSS</h3>
-                    <p>
-                        Good knowagle of CSS helping me "translate" project design on a wabpage.
-                    </p>
-                </Li>
-                <Li><h3>JS</h3>
-                    <p> 
-                        10%, learning in process...
-                    </p>    
-                </Li>
-               <li><h3>FIGMA</h3>
-                    <p class="FigmaTyping">
-                        This page was fully design in Figma. I can design pages and then code it 1:1. Figma is a great tool which helps desing software, logos, www.
-                    </p>
-                </li>
-                <!--<li><img src="img/CodeIconsCodeIcons.png" alt="">
-                </li>-->
-                <li>
-                    <img src="img/VectorHTML.png" alt="Vector HTML">
-                    <img src="img/VectorCSS.png" alt="Vector CSS">
-                    <img src="img/VectorJS.png" alt="Vector Java Script">
-                    <img src="img/VectorReact.png" alt="Vector React">
-                    <img src="img/VectorSwift.png" alt="Vector Swift">
-                    <img src="img/VectorFigma.png" alt="Vector Figma">
-                </li>
-            </ul>
-            
-
-
-            <img class="Coder" src="img/w-unsplash.jpeg" alt="CodingGuy"/>
-        </section>
-
-        <div class="Separator" id="Contact">
-            <h2>Contact:</h2>
-            <a href="#HomeId">Back <img class="strzalka" src="img/Vectorstrzalka.png" alt="Strzalka"></a>
-        </div> 
-
-        <section class="ContactMe" id="ContactId">
-
-            <img src="img/mail.png" alt="Envelope"/>
-
-            <div class="formula">
-                <input type="text" name="" id="InputName" required placeholder="Name"><br>
-                <input type="mail" name="" id="InputMail" required placeholder="e-maill address"><br>
-                <textarea name="text" id="InputTxt" cols="30" rows="10" placeholder="Your massage /this section is under construction, you can use send button via mail client"></textarea>
-                <a href="mailto:rafal.rudnik@gmail.com" id="SendMail">SEND</a>
+            <div class="home-right">
+                <img src="/public/img/profileIcons.png" alt="" class="portfolioImg">
             </div>
 
-        </section>
+        </div>
 
-        <footer>
-            <p>
-                Copy rights BNC Rafał Rudnik company. 
-            </p>
-        </footer>
+        <!----------------------------------------- ABOUT SECTION  ---------------------------------------------->
+
+        <div class="spacing">
+        </div>
+
+        <div class="about container" id="about-id">
+
+            <h3>ABOUT</h3>
+
+        </div>
+
+        <div class="about-div container flex">
+
+            <div class="about-left">
+                <img src="/public/img/about-me.png" alt="" class="about-left-img">
+            </div>
+            
+            
+            
+            <div class="about-right">
+
+                <ul class="about-ul">
+
+                    <li class="about-li flex">
+
+                        <div class="li-img">
+                            <img src="/public/img/BuisnessIco.png" alt="">
+                        </div>
+                        <div class="div-li">
+                           <h4>Buisness, work:</h4>
+                           <p>
+
+                            I'm owner of BNC Rafal Rudnik - international forwarding company since 2017. I've decide to change my carrier and enter the world of computer science again. I wish to start from Front-end dev.I prefer B&B contracts over full time and appreciate flexible working hours,opportunity to elevate as worker, programmer and person.
+
+                           </p> 
+                        </div>
+                    
+                    </li>
+
+                    <li class="about-li flex">
+
+                        <div class="li-img">
+                            <img src="/public/img/ScienseIco.png" alt="">
+                        </div>
+                        <div class="div-li">
+                           <h4>Plans, science:</h4>
+                           <p>
+
+                            I've studied computer science at Zielona Gora University - Poland. Finished Cicso CCNA Academy. Learning Frontend development, myself. At this point I'm learning Java Script, later React and Apple Swift or Python. Languages: English and Polish - national.
+
+                           </p> 
+                        </div>
+                    
+                    </li>
+
+                    <li class="about-li flex">
+
+                        <div class="li-img">
+                            <img src="/public/img/SportIco.png" alt="">
+                        </div>
+                        <div class="div-li">
+                           <h4>Sport:</h4>
+                           <p>
+
+                            I'm big fan of NBA Basketball. Favorite player and sport icon Allen Iverson. Like to watch athletic competitions, ride a bike.
+
+                           </p> 
+                        </div>
+                    
+                    </li>
+
+                    <li class="about-li flex">
+
+                        <div class="li-img">
+                            <img src="/public/img/HobbyIco.png" alt="">
+                        </div>
+                        <div class="div-li">
+                           <h4>Hobby:</h4>
+                           <p>
+
+                            I'm fan of video games, good movies - thrillers. Walk on beach, spending time with my son - Lego building.My hobby is also coding. I wish to treat my work as fun, do it with smile. Only then i can work with passion.
+
+                           </p> 
+                        </div>
+                    
+                    </li>
+
+                    
+
+                </ul>
+
+            </div>
+
+
+            
+        </div>
+
+        <!----------------------------------------- SKILLS SECTION  ---------------------------------------------->
+
+        <div class="spacing">
+        </div>
+
+        <div class="about container" id="skills-id">
+
+            <h3>SKILLS</h3>
+
+        </div>
+
+        <div class="skills-div container flex">
+
+            <div class="skills">
+
+                <img src="/public/img/Htmlco.png" alt="">
+
+                <div class="skills-description">
+
+                    <p>
+                        Verry good knowagle of HTML language.<br>
+                        HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="skills">
+
+                <img src="/public/img/CssIco.png" alt="">
+
+                <div class="skills-description">
+
+                    <p>
+                        Good knowagle of CSS helping me "translate" graphic project design to a wabpage.<br>
+                        Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="skills">
+
+                <img src="/public/img/JsIco.png" alt="">
+
+                <div class="skills-description">
+
+                    <p>
+                        I'm during learning process of Java Script language.
+                        "JavaScript (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well."
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="skills">
+
+                <img src="/public/img/FigmaIco.png" alt="">
+
+                <div class="skills-description">
+
+                    <p>
+                        This page was fully design in Figma. I can design pages and then code it 1:1. <br>
+                        "Figma is a powerful design tool that helps you to create anything: websites, applications, logos, and much more. By learning to use Figma, you'll take your first steps into User Interface Design and and User Experience Design."
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!----------------------------------------- CONTACT SECTION  ---------------------------------------------->
+
+        <div class="spacing">
+        </div>
+
+        <div class="about container" id="contact-id">
+
+            <h3>CONTACT</h3>
+
+        </div>
+
+        <div class="contact-div container flex">
+
+            <div class="form-div">
+
+                <form action="">
+
+                    <input type="text" id="input-name" class="inputNameMail" required placeholder="Your name">
+                    <input type="text" id="input-mail" class="inputNameMail" required placeholder="email address">
+                    <textarea name="" id="input-txt" cols="30" rows="10" required class="inputTxt" placeholder="Your massage"></textarea>
+                    <button class="button">
+
+                        <a href="#" class="button-link">Submit</a>
+
+                    </button>
+
+
+                </form> 
+
+            </div>
+                           
+
+            <div class="contact-img-div">
+
+                <img src="/public/img/ContactMe2.png" alt="">
+
+            </div>
+
+
+        </div>
+
+        
+
+
+        <!--------------------------------------- Footer ---------------------------------------------------------->
+
+
+        <div class="spacing">
+        </div>
+
+        <div class="footer">
+            
+        </div>
+
 
     </div>
- 
-
-<script src="scripts.js"></script>   
+    
 </body>
+
 </html>
