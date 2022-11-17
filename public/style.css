@@ -372,7 +372,11 @@ h4 {
 
 /*===================================== Footer ===================================*/
 
-.footer a, p {
+.footer a {
+    color: var(--attribute);
+    font-size: 8px;
+}
+.footer p {
     color: var(--attribute);
     font-size: 8px;
 }
