@@ -163,7 +163,9 @@ a:hover {
     ul.activeBurger {
         width: 100%;
     }
-
+    .welcomeDescription {
+        font-size: 26px;
+    }
 
     
 }
