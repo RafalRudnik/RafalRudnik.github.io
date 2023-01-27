@@ -156,6 +156,10 @@ a:hover {
         align-items: center;
     }
 
+    .welcomeDescription {
+        font-size: 20px;
+    }
+
    
 }
 
