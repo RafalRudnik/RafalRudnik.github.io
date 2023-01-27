@@ -451,5 +451,12 @@ footer {
         font-size: 20px;
     }
 
-    
+    .hobbies {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .hobbiesTitles {
+        width: 100%;
+    } 
 }
