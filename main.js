@@ -1,5 +1,6 @@
 // BURGER MENU //
 
+const body = document.querySelector('body')
 const burgerMenu = document.querySelector('ul');
 const burgerIcon = document.querySelector('.burger');
 
@@ -7,6 +8,13 @@ burgerIcon.addEventListener('click', function() {
     burgerMenu.classList.toggle('activeBurger');
     burgerIcon.classList.toggle('activeBurger');
 });
+
+const switchMode = document.querySelector('.switch-mode')
+
+switchMode.addEventListener('click', function (){
+    body.classList.toggle('dark')
+})
+
 
 
 // NAVIGATION MENU //
