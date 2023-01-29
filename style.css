@@ -447,17 +447,18 @@ button:hover{
     bottom: 60px;
     cursor: pointer;
     color: var(--font-color);
+    font-size: 20px;
 }
 
 
 .switch-mode .sun {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--font-color);
     
 }
 
 .switch-mode .moon {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--font-color);
 
 }
