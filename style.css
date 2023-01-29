@@ -444,11 +444,12 @@ button:hover{
     width: 100%;
     display: flex;
     position: absolute;
-    bottom: 60px;
+    top: 120px;
     margin-left: 12px;
     cursor: pointer;
     color: var(--font-color);
     font-size: 20px;
+    filter: var(--filter-shadow);
 }
 
 
