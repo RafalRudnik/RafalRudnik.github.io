@@ -116,77 +116,6 @@ a:hover {
 	transition: 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 1000px) {
-	.burger {
-		display: block;
-		transition: 0.5s ease-in-out;
-	}
-	.burger.activeBurger .line:first-child {
-		transform: translateY(-300px);
-	}
-	.burger.activeBurger .line:nth-child(2) {
-		transform: rotate(-405deg) translateY(8px);
-	}
-	.burger.activeBurger .line:nth-child(3) {
-		transform: rotate(45deg) translateY(-7px);
-	}
-
-	ul {
-		position: absolute;
-		display: none;
-		flex-direction: column;
-		gap: 4em;
-		right: 0;
-		top: 120px;
-		background-color: var(--footColor);
-		text-align: center;
-		/* transform: translate(100%); */
-		transition: 0.5s ease-in-out;
-		padding: 12px;
-		z-index: 1;
-	}
-
-	a {
-		cursor: pointer;
-	}
-
-	ul.activeBurger {
-		/* transform: translate(0%); */
-		display: flex;
-	}
-
-	.active {
-		flex-direction: column;
-	}
-
-	.skillsflex {
-		flex-direction: column;
-	}
-
-	.aboutImg {
-		display: none;
-	}
-
-	.sectionKnowagle {
-		text-align: center;
-		align-items: center;
-	}
-
-	.slider-wrapper {
-		padding: 10px;
-	}
-
-	.slider img {
-		object-fit: contain;
-	}
-}
-
-@media only screen and (max-width: 780px) {
-	ul.activeBurger {
-		width: 100%;
-	}
-}
-
 /* Home section */
 
 .notActive {
@@ -554,5 +483,75 @@ footer {
 
 	.sectionHome .homeImg {
 		min-width: 50%;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	.burger {
+		display: block;
+		transition: 0.5s ease-in-out;
+	}
+	.burger.activeBurger .line:first-child {
+		transform: translateY(-300px);
+	}
+	.burger.activeBurger .line:nth-child(2) {
+		transform: rotate(-405deg) translateY(8px);
+	}
+	.burger.activeBurger .line:nth-child(3) {
+		transform: rotate(45deg) translateY(-7px);
+	}
+
+	ul {
+		position: absolute;
+		display: none;
+		flex-direction: column;
+		gap: 4em;
+		right: 0;
+		top: 120px;
+		background-color: var(--footColor);
+		text-align: center;
+		/* transform: translate(100%); */
+		transition: 0.5s ease-in-out;
+		padding: 12px;
+		z-index: 1;
+	}
+
+	a {
+		cursor: pointer;
+	}
+
+	ul.activeBurger {
+		/* transform: translate(0%); */
+		display: flex;
+	}
+
+	.active {
+		flex-direction: column;
+	}
+
+	.skillsflex {
+		flex-direction: column;
+	}
+
+	.aboutImg {
+		display: none;
+	}
+
+	.sectionKnowagle {
+		text-align: center;
+		align-items: center;
+	}
+
+	.slider-wrapper {
+		padding: 10px;
+	}
+
+	.slider img {
+		object-fit: contain;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	ul.activeBurger {
+		width: 100%;
 	}
 }
