@@ -175,6 +175,10 @@ a:hover {
 	.slider-wrapper {
 		padding: 10px;
 	}
+
+	.slider img {
+		object-fit: contain;
+	}
 }
 
 @media only screen and (max-width: 780px) {
@@ -379,7 +383,7 @@ h2 {
 .slider img {
 	flex: 1 0 100%;
 	scroll-snap-align: start;
-	object-fit: fill;
+	object-fit: cover;
 }
 
 .slider-nav {
