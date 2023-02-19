@@ -543,10 +543,7 @@ footer {
 
 	.slider-wrapper {
 		padding: 10px;
-	}
-
-	.slider img {
-		object-fit: scale-down;
+		max-width: 26rem;
 	}
 }
 
