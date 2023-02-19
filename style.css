@@ -546,7 +546,7 @@ footer {
 	}
 
 	.slider img {
-		object-fit: contain;
+		object-fit: scale-down;
 	}
 }
 
