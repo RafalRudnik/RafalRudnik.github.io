@@ -495,12 +495,17 @@ button:hover {
 
 .switch-mode .sun {
 	font-size: 20px;
-	color: var(--font-color);
+	color: white;
 }
 
 .switch-mode .moon {
 	font-size: 20px;
-	color: var(--font-color);
+	color: black;
+	margin-left: -20px;
+}
+
+.blackWhite {
+	opacity: 0;
 }
 
 /* Footer */
