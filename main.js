@@ -19,17 +19,17 @@ const moon = document.querySelector('.moon');
 
 const sections = document.querySelectorAll('.section');
 
-burgerIcon.addEventListener('click', function () {
-	burgerMenu.classList.toggle('activeBurger');
-	burgerIcon.classList.toggle('activeBurger');
-});
-
 const switchMode = document.querySelector('.switch-mode');
 
-switchMode.addEventListener('click', function () {
+const burgerSwitch = () => {
+	burgerMenu.classList.toggle('activeBurger');
+	burgerIcon.classList.toggle('activeBurger');
+};
+
+const darkMode = () => {
 	body.classList.toggle('dark');
 	moon.classList.toggle('blackWhite');
-});
+};
 
 const removeClass = () => {
 	sections.forEach((section) => section.classList.remove('active'));
@@ -57,6 +57,10 @@ const contact = () => {
 // NAVIGATION MENU //
 
 homeSection.classList.toggle('active');
+
+burgerIcon.addEventListener('click', burgerSwitch);
+
+switchMode.addEventListener('click', darkMode);
 
 homeLink.addEventListener('click', home);
 aboutLink.addEventListener('click', about);
