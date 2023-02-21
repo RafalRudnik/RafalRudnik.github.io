@@ -3,7 +3,6 @@
 const body = document.querySelector('body');
 const burgerMenu = document.querySelector('ul');
 const burgerIcon = document.querySelector('.burger');
-// NAVIGATION MENU //
 
 const homeLink = document.querySelector('.liHome');
 const aboutLink = document.querySelector('.liAbout');
@@ -18,6 +17,8 @@ const contactSection = document.getElementById('contactSection');
 const sun = document.querySelector('.sun');
 const moon = document.querySelector('.moon');
 
+const sections = document.querySelectorAll('.section');
+
 burgerIcon.addEventListener('click', function () {
 	burgerMenu.classList.toggle('activeBurger');
 	burgerIcon.classList.toggle('activeBurger');
@@ -30,36 +31,34 @@ switchMode.addEventListener('click', function () {
 	moon.classList.toggle('blackWhite');
 });
 
+const removeClass = () => {
+	sections.forEach((section) => section.classList.remove('active'));
+};
+const home = () => {
+	removeClass();
+	homeSection.classList.add('active');
+};
+
+const about = () => {
+	removeClass();
+	aboutSection.classList.add('active');
+};
+
+const knowlage = () => {
+	removeClass();
+	knowagleSection.classList.add('active');
+};
+
+const contact = () => {
+	removeClass();
+	contactSection.classList.add('active');
+};
+
+// NAVIGATION MENU //
+
 homeSection.classList.toggle('active');
 
-homeLink.addEventListener('click', function () {
-	aboutSection.classList.remove('active');
-	knowagleSection.classList.remove('active');
-	contactSection.classList.remove('active');
-	homeSection.classList.add('active');
-	//homeSection.classList.toggle('active')
-});
-
-aboutLink.addEventListener('click', function () {
-	homeSection.classList.remove('active');
-	knowagleSection.classList.remove('active');
-	contactSection.classList.remove('active');
-	aboutSection.classList.add('active');
-	//aboutSection.classList.toggle('active')
-});
-
-knowagleLink.addEventListener('click', function () {
-	homeSection.classList.remove('active');
-	aboutSection.classList.remove('active');
-	contactSection.classList.remove('active');
-	knowagleSection.classList.add('active');
-	//knowagleSection.classList.toggle('active')
-});
-
-contactLink.addEventListener('click', function () {
-	homeSection.classList.remove('active');
-	aboutSection.classList.remove('active');
-	knowagleSection.classList.remove('active');
-	contactSection.classList.add('active');
-	//knowagleSection.classList.toggle('active')
-});
+homeLink.addEventListener('click', home);
+aboutLink.addEventListener('click', about);
+knowagleLink.addEventListener('click', knowlage);
+contactLink.addEventListener('click', contact);
