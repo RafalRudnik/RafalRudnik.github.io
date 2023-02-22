@@ -220,6 +220,7 @@ h2 {
 /* Knowagle section */
 
 .sectionKnowagle {
+	margin-top: 5rem;
 	position: relative;
 	justify-content: center;
 	gap: 10em;
