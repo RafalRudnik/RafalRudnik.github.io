@@ -91,6 +91,11 @@ a:hover {
 
 .logo {
 	filter: var(--filter-shadow);
+	display: none;
+}
+
+.logo-on {
+	display: block;
 }
 
 /* Burger */

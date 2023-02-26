@@ -16,6 +16,7 @@ const contactSection = document.getElementById('contactSection');
 
 const sun = document.querySelector('.sun');
 const moon = document.querySelector('.moon');
+const logo = document.querySelectorAll('.logo');
 
 const sections = document.querySelectorAll('.section');
 
@@ -29,6 +30,7 @@ const burgerSwitch = () => {
 const darkMode = () => {
 	body.classList.toggle('dark');
 	moon.classList.toggle('blackWhite');
+	logo.forEach((logo) => logo.classList.toggle('logo-on'));
 };
 
 const removeClass = () => {
