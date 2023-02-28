@@ -30,6 +30,10 @@
 	--filter-shadow: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
 }
 
+html {
+	font-size: 62.5%;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -37,9 +41,8 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-	max-width: 1512px;
-	min-height: 100vh;
-	font-size: 10px;
+	width: 100vw;
+	/* max-width: 1512px; */
 	overflow-x: hidden !important;
 	font-family: 'Roboto', sans-serif;
 	background: var(--white-color);
@@ -71,7 +74,7 @@ ul {
 }
 
 a {
-	font-size: 18px;
+	font-size: 1.8rem;
 	text-decoration: none;
 	font-weight: bold;
 	color: var(--font-color);
@@ -80,11 +83,13 @@ a {
 }
 
 a:hover {
-	letter-spacing: 0.1em;
+	letter-spacing: 0.1rem;
 	opacity: 60%;
 }
 
 .container {
+	position: relative;
+	min-height: 100vh;
 	margin: 0 auto;
 	padding: 12px;
 }
@@ -137,7 +142,7 @@ a:hover {
 
 .sectionHome {
 	position: relative;
-	gap: 2em;
+	gap: 4rem;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -146,13 +151,14 @@ a:hover {
 }
 
 .sectionHome .homeImg {
+	display: block;
 	border-radius: 15px;
 	filter: var(--filter-shadow);
 	width: 25%;
 }
 
 .welcomeH {
-	font-size: 56px;
+	font-size: 5.6rem;
 	font-weight: bold;
 	text-align: left;
 	display: block;
@@ -163,16 +169,16 @@ a:hover {
 	content: attr(data-heading);
 	display: block;
 	color: var(--attColor);
-	font-size: 28px;
+	font-size: 2.8rem;
 }
 
 .welcomeDescription {
-	font-size: 36px;
+	font-size: 3.6rem;
 	font-weight: bold;
-	line-height: 0.5em;
+	line-height: 0.5rem;
 	text-align: left;
 	text-shadow: var(--text-shadow-main);
-	letter-spacing: 0.05em;
+	letter-spacing: 0.05rem;
 	color: var(--font-color);
 }
 
@@ -195,7 +201,7 @@ a:hover {
 }
 
 h2 {
-	font-size: 28px;
+	font-size: 2.8rem;
 	font-weight: bold;
 	text-shadow: var(--text-shadow-main);
 	color: var(--font-color);
@@ -204,14 +210,14 @@ h2 {
 .hobbiesDescription {
 	color: var(--pColor);
 	opacity: 90%;
-	font-size: 16px;
-	letter-spacing: 0.05em;
+	font-size: 1.6rem;
+	letter-spacing: 0.05rem;
 }
 
 .hobbies {
 	display: flex;
-	margin-top: 15em;
-	gap: 10em;
+	margin-top: 15rem;
+	gap: 10rem;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-start;
@@ -228,8 +234,8 @@ h2 {
 	margin-top: 5rem;
 	position: relative;
 	justify-content: center;
-	gap: 10em;
-	top: 5em;
+	gap: 15rem;
+	top: 5rem;
 }
 
 .skillsTree h2 {
@@ -301,8 +307,12 @@ h2 {
 
 .slider-wrapper {
 	position: relative;
-	max-width: 36rem;
+	max-width: 58rem;
+	min-width: 40rem;
 	margin: 0 auto;
+	border-radius: 0.5rem;
+	background-color: #222222;
+	box-shadow: 0 0 5px var(--pColor);
 }
 
 .slider {
@@ -387,7 +397,7 @@ textarea {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 28px;
+	font-size: 2.8rem;
 	font-weight: bold;
 	cursor: pointer;
 	width: 100px;
@@ -402,7 +412,7 @@ textarea {
 
 .downloadBtn a {
 	color: var(--font-color-btn);
-	font-size: 0.9em;
+	font-size: 1rem;
 	font-weight: bold;
 }
 
@@ -428,17 +438,17 @@ button:hover {
 	margin-left: 12px;
 	cursor: pointer;
 	color: var(--font-color);
-	font-size: 20px;
+	font-size: 2rem;
 	filter: var(--filter-shadow);
 }
 
 .switch-mode .sun {
-	font-size: 20px;
+	font-size: 2rem;
 	color: white;
 }
 
 .switch-mode .moon {
-	font-size: 20px;
+	font-size: 2rem;
 	color: black;
 	margin-left: -20px;
 }
