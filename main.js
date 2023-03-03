@@ -22,6 +22,8 @@ const sections = document.querySelectorAll('.section');
 
 const switchMode = document.querySelector('.switch-mode');
 
+const sendBtn = document.querySelector('.sendBtn');
+
 const burgerSwitch = () => {
 	burgerMenu.classList.toggle('activeBurger');
 	burgerIcon.classList.toggle('activeBurger');
@@ -56,6 +58,29 @@ const contact = () => {
 	contactSection.classList.add('active');
 };
 
+// EMAIL SENDING  //
+
+function sendMail() {
+	let params = {
+		name: document.getElementById('name').value,
+		email: document.getElementById('email').value,
+		message: document.getElementById('message').value,
+	};
+	const serviceId = 'service_p6oe9zt';
+	const templateId = 'template_nahts8t';
+
+	emailjs
+		.send(serviceId, templateId, params)
+		.then((res) => {
+			document.getElementById('name').value = '';
+			document.getElementById('email').value = '';
+			document.getElementById('message').value = '';
+			console.log(res);
+			alert('message send successfully');
+		})
+		.catch((err) => console.log(err));
+}
+
 // NAVIGATION MENU //
 
 homeSection.classList.toggle('active');
@@ -68,3 +93,5 @@ homeLink.addEventListener('click', home);
 aboutLink.addEventListener('click', about);
 knowagleLink.addEventListener('click', knowlage);
 contactLink.addEventListener('click', contact);
+
+sendBtn.addEventListener('click', sendMail);

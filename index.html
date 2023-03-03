@@ -150,9 +150,9 @@
         <div id="contactSection" class="sectionContact notActive section">
             <h2>Short massage:</h2>
             <form action="">
-                <input type="text" name="" id="" placeholder="name:" required>
-                <input type="email" name="" id="" placeholder="e-mail address:" required>
-                <textarea name="" id="" cols="30" rows="6" placeholder="massage:"></textarea>
+                <input type="text" class="form-control" name="" id="name" placeholder="name:" required>
+                <input type="email" class="form-control" name="" id="email" placeholder="e-mail address:" required>
+                <textarea class="form-control" id="message" cols="30" rows="6" placeholder="massage:"></textarea>
             </form>
             <div class="buttons">
     
@@ -188,11 +188,18 @@
         </footer>
     
     
-        <script src="/main.js"></script>
-
-
+        
+        
     </div>
-
+    <script src="/main.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("Lz5Ri-tR-6-HHbpPL");
+        })();
+     </script>
 </body>
 
 </html>
