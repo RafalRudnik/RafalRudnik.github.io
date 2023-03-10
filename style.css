@@ -175,7 +175,7 @@ a:hover {
 .welcomeDescription {
 	font-size: 3.6rem;
 	font-weight: bold;
-	line-height: 0.5rem;
+	line-height: 1rem;
 	text-align: left;
 	text-shadow: var(--text-shadow-main);
 	letter-spacing: 0.05rem;
