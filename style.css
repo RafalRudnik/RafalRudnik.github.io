@@ -232,6 +232,7 @@ h2 {
 
 .sectionKnowagle {
 	margin-top: 5rem;
+	margin-bottom: 5rem;
 	position: relative;
 	justify-content: center;
 	gap: 15rem;
@@ -243,7 +244,7 @@ h2 {
 }
 
 .projectExamples {
-	margin-bottom: 3em;
+	margin-bottom: 20px;
 }
 
 .projectExamples h2 {
@@ -307,7 +308,7 @@ h2 {
 
 .slider-wrapper {
 	position: relative;
-	max-width: 58rem;
+	max-width: 50rem;
 	min-width: 40rem;
 	margin: 0 auto;
 	border-radius: 0.5rem;
@@ -338,14 +339,19 @@ h2 {
 	bottom: 1.25rem;
 	left: 50%;
 	transform: translateX(-50%);
+	/* background-color: #22222288; */
+	padding: 5px;
+	border-radius: 5px;
 	z-index: 1;
 }
 
 .slider-nav a {
 	width: 0.5rem;
 	height: 0.5rem;
+	padding: 3px;
+	border: 1px solid black;
 	border-radius: 50%;
-	background-color: var(--attColor);
+	background-color: white;
 	opacity: 0.75;
 	transition: opacity ease 250ms;
 }
