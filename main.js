@@ -2,12 +2,16 @@ const homeBtn = document.querySelector('.home-link');
 const aboutBtn = document.querySelector('.about-link');
 const cntBtn = document.querySelector('.contact-link');
 const portBtn = document.querySelector('.profile-link');
+const snedBtn = document.querySelector('.btn');
 const allBtns = document.querySelectorAll('.links a');
 const allSections = document.querySelectorAll('.sections');
 const home = document.querySelector('.home-section');
 const about = document.querySelector('.about-section');
 const portfolio = document.querySelector('.portfolio-section');
 const contact = document.querySelector('.contact-section');
+
+const form = document.querySelector('.form-not-send');
+const msgSend = document.querySelector('.massage-send');
 
 // homeBtn.classList.toggle('active-link');
 // home.classList.toggle('display-on');
@@ -46,8 +50,13 @@ const cntBtnActive = () => {
 	contact.classList.add('display-on');
 };
 
+const mailConfirm = () => {
+	form.classList.toggle('display-off');
+	msgSend.classList.toggle('display-on');
+};
+
 homeBtn.addEventListener('click', homeBtnActive);
 aboutBtn.addEventListener('click', aboutBtnActive);
 portBtn.addEventListener('click', portBtnActive);
 cntBtn.addEventListener('click', cntBtnActive);
-
+snedBtn.addEventListener('click', mailConfirm);

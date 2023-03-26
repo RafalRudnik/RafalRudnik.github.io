@@ -301,8 +301,6 @@ footer {
 
 // ====================== PORTFOLIO SECTION ======================
 
-
-
 // ====================== CONTACT SECTION ======================
 
 .form-not-send {
@@ -343,6 +341,15 @@ footer {
 	.btn:hover {
 		opacity: 0.8;
 	}
+}
+
+.massage-send {
+	display: none;
+	font-size: 1.4rem;
+	padding: 20px 30px;
+	background-color: $loading-bg;
+	border-radius: 15px;
+	color: $green-sh;
 }
 
 @media (min-width: 768px) {

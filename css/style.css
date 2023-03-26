@@ -349,6 +349,15 @@ footer {
   opacity: 0.8;
 }
 
+.massage-send {
+  display: none;
+  font-size: 1.4rem;
+  padding: 20px 30px;
+  background-color: rgba(61, 64, 57, 0.3960784314);
+  border-radius: 15px;
+  color: #03c987;
+}
+
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
