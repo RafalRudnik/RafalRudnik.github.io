@@ -5,205 +5,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Rafal Rudnik">
-    <meta name="keywords" content="BNC, Rafal Rudnik, portfolio, BNC Company, BNC Poland, BNC Webdeveloper">
-    <meta name="description" content="BNC Rafal Rudnik portfolio webpage">
-    <title>BNC Rafal Rudnik</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Rafal Rudnik portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e30f62455.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 
+
+
     <div class="container">
 
-        <header>
-            <img src="./img/Logo.svg" alt="Logo image of BNC company" class="logo logo-on">
-            <img src="./img/LogoWhite.svg" alt="Logo image of BNC company" class="logo">
-            <ul class="nav">
-                <li><a class="liHome" href="#">HOME</a></li>
-                <li><a class="liAbout" href="#">ABOUT ME</a></li>
-                <li><a class="liKnowagle" href="#">KNOWLEDGE</a></li>
-                <li><a class="liContact" href="#">CONTACT</a></li>
-            </ul>
-
-            <button class="burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </button>
-
-        </header>
-
-        <!-- Home section -->
-
-        <div id="homeSection" class="sectionHome notActive section">
-            <img class="homeImg" src="/img/Me_no_bacground.jpg" alt="Photo shows Rafal Rudnik">
-            <div>
-                <h1 class="welcomeH" data-heading="My name is Rafał I'm:">
-                    Hi
-                </h1>
-                <p class="welcomeDescription">Beginner Frontend developer</p>
-                <p class="welcomeDescription">UI designer</p>
-                <p class="welcomeDescription">I love IT!</p>
-
+        <nav>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-html5"></i>
+            <div class="nav-top">
+                <div class="profile">
+                    <img src="./img/IMG_0931.png" alt="profile photo of Rafal Rudnik" class="profile-img" />
+                </div>
+                <ul>
+                    <h2>BNC</h2>
+                    <p class="p-nav">Rafał</p>
+                    <p class="p-nav">Rudnik</p>
+                    <li class="links"><a href="#Home" class="home-link">Home</a></li>
+                    <li class="links"><a href="#About" class="about-link">About</a></li>
+                    <li class="links"><a href="#" class="profile-link">Portfolio</a></li>
+                    <li class="links"><a href="#" class="contact-link">Contact</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
 
-        <!-- About section -->
+        <section id="Home" class="sections home-section">
 
-        <div id="aboutSection" class="sectionAbout notActive section">
+            <h1>Hi <span>My name is Rafał I'm:</span></h1>
+            <p class="p-home">Beginner Frontend developer</p>
+            <p class="p-home">Web designer</p>
+            <p class="p-home">I love IT!</p>
 
-            <div class="hobbies">
-                <div class="hobbiesTitles">
-                    <h2>Buisness, work:</h2>
-                    <p class="hobbiesDescription">
-                        I'm owner of BNC Rafal Rudnik - international forwarding company since 2017. I've decide to
-                        change
-                        my carrier and enter the world of computer science again. I wish to start from Front-end dev.I
-                        Prefer B&B contracts over full time and appreciate flexible working hours,opportunity to elevate
-                        as
-                        worker, programmer and person.
-                    </p>
-                </div>
-                <div class="hobbiesTitles">
-                    <h2>Hobby:</h2>
-                    <p class="hobbiesDescription">
-                        I'm fan of video games, good movies - thrillers. Walk on beach, spending time with my son - Lego
-                        building.My hobby is also coding. I wish to treat my work as fun, do it with smile. Only then i
-                        can
-                        work with passion.
-                    </p>
-                </div>
-                <div class="hobbiesTitles">
-                    <h2>Sport:</h2>
-                    <p class="hobbiesDescription">
-                        I'm big fan of NBA Basketball. Favorite player and sport icon Allen Iverson. Like to watch
-                        athletic
-                        competitions, ride a bike.
-                    </p>
-                </div>
-                <div class="hobbiesTitles">
-                    <h2>Plans, sciense:</h2>
-                    <p class="hobbiesDescription">
-                        I've studied computer science at Zielona Gora University - Poland. Finished Cicso CCNA Academy.
-                        Learning Frontend development, myself. At this point I'm learning Java Script, later React and
-                        Apple
-                        Swift or Python. Languages: English and Polish - national.
-                    </p>
-                </div>
+
+        </section>
+
+        <section id="About" class="sections about-section">
+            <i class="fa-solid fa-code"></i>
+            <div class="about-work">
+                <h2>Buisness, work:</h2>
+                <p class="about-description">
+                    I'm owner of BNC Rafal Rudnik - international forwarding company since 2017. I've decide to change
+                    my carrier and enter the world of computer science again. I wish to start from Front-end dev.I
+                    Prefer B&B contracts over full time and appreciate flexible working hours. I'm looking for
+                    opportunity to elevate as worker, programmer and person.
+                    Since 2023, I offer my services in creating and modernizing responsive websites.
+
+                </p>
             </div>
-            <img src="/img/aboutImg.png" alt="Photo of Rafal Rudnik" class="aboutImg">
+            <div class="about-knowledge">
+                <h2>Plans and knowledge:</h2>
+                <p class="about-description">
+                    I've studied computer science at Zielona Gora University - Poland. Finished Cicso CCNA Academy. I am
+                    learning frontend on my own, currently I have knowledge in the field of HTML, CSS, SCSS, Javascript,
+                    Bootstrap.
+                    Next, I'm going to gain knowledge and skills in creating web applications using React and Tailwind.
+                    Languages: English and Polish - national.
 
-        </div>
-
-        <!-- Knowagle section -->
-
-        <div id="knowagleSection" class="sectionKnowagle notActive section">
-
-            <div class="skillsTree">
-                <h2>Skills Tree:</h2>
-                <img src="/img/FigmaIco.png" alt="Figma" class="skillsImg figmaIcon">
-
-                <div class="skillsflex">
-
-                    <div class="skillsTreeOne">
-
-                        <img src="/img/htmlCss.png" alt="Html Css icons" class="skillsImg htmlIcon">
-                        <img src="/img/js.png" alt="Java script icon" class="skillsImg jsIcon">
-                        <img src="/img/ReactIco.png" alt="React icon" class="skillsImg reactIcon">
-
-                    </div>
-                    <div class="skillsTreeTwo">
-                        <div class="skillsTreeTwoApple">
-                            <img src="/img/appleG.png" alt="Apple icon" class="skillsImg appleIcon">
-                            <img src="/img/Swift.png" alt="Swfift icon" class="skillsImg swiftIcon">
-                        </div>
-                        <div class="skillsTreeTwoPython">
-                            <img src="/img/Python.png" alt="Python icon" class="skillsImg pythonIcon">
-                        </div>
-                    </div>
-
-                </div>
-
-
+                </p>
             </div>
-
-
-
-            <div class="projectExamples">
-                <h2>Projects examples:</h2>
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <img id="slide-1" src="./img/Project_1.png" alt="Overview from project no. 1">
-                        <img id="slide-2" src="./img/Project_2.png" alt="Overview from project no. 2">
-                        <img id="slide-3" src="./img/Project_3.jpg" alt="Overview from project no. 3">
-                    </div>
-                    <div class="slider-nav">
-                        <a href="#slide-1"></a>
-                        <a href="#slide-2"></a>
-                        <a href="#slide-3"></a>
-                    </div>
-                </div>
+            <div class="about-sport">
+                <h2>Sport:</h2>
+                <p class="about-description">
+                    I'm big fan of NBA Basketball. Favorite player and sport icon Allen Iverson. Like to watch athletic
+                    competitions, ride a bike.
+                </p>
             </div>
+            <div class="about-hobby">
+                <h2>Hobby:</h2>
+                <p class="about-description">
+                    I'm fan of video games, good movies - thrillers. Walk on beach, spending time with my son - Lego
+                    building.My hobby is also coding. I wish to treat my work as fun, do it with smile. Only then i can
+                    work with passion.
+                </p>
+            </div>
+        </section>
 
+        <section class="sections portfolio-section">
+            
+        </section>
 
-        </div>
-
-        <!-- Contact section -->
-
-        <div id="contactSection" class="sectionContact notActive section">
-            <h2>Short massage:</h2>
-            <form action="">
-                <input type="text" class="form-control" name="" id="name" placeholder="name:" required>
-                <input type="email" class="form-control" name="" id="email" placeholder="e-mail address:" required>
-                <textarea class="form-control" id="message" cols="30" rows="6" placeholder="massage:"></textarea>
+        <section class="sections contact-section">
+            <form action="https://formsubmit.io/send/bnc.webdev@gmail.com" method="POST" class="form-not-send">
+                <i class="fa-solid fa-at"></i>
+                <input type="mail" name="mail" id="mail" placeholder="e-mail address" required>
+                <textarea name="msg" id="msg" cols="30" rows="10"
+                    placeholder="Please enter massage and name"></textarea>
+                <input type="submit" value="SEND" id="" class="btn"></button>
+                <input name="_redirect" type="hidden" id="name"
+                    value="#">
+                    <!-- value="https://bnc-rafal-rudnik.000webhostapp.com/#contact"> -->
             </form>
-            <div class="buttons">
-
-                <button class="sendBtn">
-                    <img src="/img/Send.png" alt="">
-                </button>
-                <!-- <a href="#">
-    
-                    <button class="downloadBtn">
-                        <a href="/Rafal_CV.pdf">CV<img src="/img/Download.png" alt="DownloadArrow"></a>
-                    </button>
-    
-                </a> -->
-
-
-            </div>
-        </div>
-
-        <!-- ------------------- dark mode --------------- -->
-
-        <div class="switch-mode">
-            </span>
-            <i class="uil uil-sun sun"></i>
-            <i class="uil uil-moon moon"></i>
-            <span>
-
-        </div>
-
-        <!-- Footer -->
-
-        <footer>
-            <p class="footerP">&copy; reserved BNC Rafał Rudnik</p>
-        </footer>
-
-
+        </section>
 
 
     </div>
-    <script src="/main.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("Lz5Ri-tR-6-HHbpPL");
-        })();
-    </script>
+
+
+
+    <footer>
+        <p>&copy; reserved BNC Rafał Rudnik</p>
+    </footer>
+
+    <script src="./main.js"></script>
+
 </body>
 
 </html>
