@@ -98,7 +98,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	height: auto;
-	gap: 50px;
+	gap: 70px;
 	margin: 0 auto;
 	padding: 60px 12px;
 }
@@ -301,6 +301,69 @@ footer {
 
 // ====================== PORTFOLIO SECTION ======================
 
+.slider-wrapper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	.slider {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		overflow-y: hidden;
+		scroll-snap-type: y mandatory;
+		scroll-behavior: smooth;
+		border-radius: 15px;
+
+		img {
+			position: relative;
+			width: 100%;
+			flex: 1 0 100%;
+			scroll-snap-align: start;
+			object-fit: cover;
+		}
+		.slide-desc {
+			position: absolute;
+			bottom: 0%;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 10%;
+			font-size: 1.4rem;
+			color: $main-txt;
+			z-index: 1;
+		}
+	}
+	.slider::after {
+		content: '';
+		position: absolute;
+		bottom: 0%;
+		height: 15%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		// z-index: 1;
+	}
+	.slider-nav {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		z-index: 1;
+		a {
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background-color: $light-g;
+			opacity: 0.6;
+			transition: opacity 0.4s;
+		}
+		a:hover {
+			opacity: 1;
+		}
+	}
+}
+
 // ====================== CONTACT SECTION ======================
 
 .form-not-send {
@@ -337,9 +400,11 @@ footer {
 		border: none;
 		font-weight: bold;
 		width: 50%;
+		opacity: 0.8;
+		transition: opacity 0.4s;
 	}
 	.btn:hover {
-		opacity: 0.8;
+		opacity: 1;
 	}
 }
 
@@ -368,6 +433,12 @@ footer {
 		overflow-y: auto;
 		scroll-snap-type: y mandatory;
 		scroll-behavior: smooth;
+	}
+	.sections {
+		width: 50%;
+	}
+	form {
+		width: 50%;
 	}
 	.home-section {
 		h1 {
