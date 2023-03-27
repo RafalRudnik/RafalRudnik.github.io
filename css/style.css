@@ -393,6 +393,7 @@ footer {
   padding: 12px;
   color: rgb(239, 234, 234);
   background-color: transparent;
+  border: 1px solid #347474;
   box-shadow: 0px 0px 1px #03c987;
   border-radius: 15px;
   outline: #03c987;
@@ -435,6 +436,7 @@ footer {
     align-items: center;
     max-width: 700px;
     max-height: 700px;
+    overflow-x: hidden;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;

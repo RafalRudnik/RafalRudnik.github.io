@@ -13,8 +13,8 @@ const contact = document.querySelector('.contact-section');
 const form = document.querySelector('.form-not-send');
 const msgSend = document.querySelector('.massage-send');
 
-// homeBtn.classList.toggle('active-link');
-// home.classList.toggle('display-on');
+homeBtn.classList.toggle('active-link');
+home.classList.toggle('display-on');
 
 const activeLinkRemove = () => {
 	allBtns.forEach((btn) => btn.classList.remove('active-link'));

@@ -391,6 +391,7 @@ footer {
 		padding: 12px;
 		color: $main-txt;
 		background-color: transparent;
+		border: 1px solid $dark-g;
 		box-shadow: 0px 0px 1px $green-sh;
 		border-radius: 15px;
 		outline: $green-sh;
@@ -430,6 +431,7 @@ footer {
 		align-items: center;
 		max-width: 700px;
 		max-height: 700px;
+		overflow-x: hidden;
 		overflow-y: auto;
 		scroll-snap-type: y mandatory;
 		scroll-behavior: smooth;
