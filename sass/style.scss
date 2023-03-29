@@ -308,8 +308,8 @@ footer {
 	.slider {
 		position: relative;
 		display: flex;
-		flex-direction: column;
-		overflow-y: hidden;
+		// flex-direction: column;
+		overflow-x: hidden;
 		scroll-snap-type: y mandatory;
 		scroll-behavior: smooth;
 		border-radius: 15px;
@@ -321,33 +321,14 @@ footer {
 			scroll-snap-align: start;
 			object-fit: cover;
 		}
-		.slide-desc {
-			position: absolute;
-			bottom: 0%;
-			left: 50%;
-			transform: translateX(-50%);
-			height: 10%;
-			font-size: 1.4rem;
-			color: $main-txt;
-			z-index: 1;
-		}
 	}
-	.slider::after {
-		content: '';
-		position: absolute;
-		bottom: 0%;
-		height: 15%;
-		width: 100%;
-		background-color: rgba(0, 0, 0, 0.5);
-		// z-index: 1;
-	}
+
 	.slider-nav {
 		position: absolute;
-		top: 50%;
-		right: 20px;
-		transform: translateY(-50%);
+		left: 50%;
+		bottom: -20px;
+		transform: translateX(-50%);
 		display: flex;
-		flex-direction: column;
 		gap: 10px;
 		z-index: 1;
 		a {
@@ -355,6 +336,7 @@ footer {
 			height: 8px;
 			border-radius: 50%;
 			background-color: $light-g;
+			padding: 5px;
 			opacity: 0.6;
 			transition: opacity 0.4s;
 		}
@@ -427,7 +409,7 @@ footer {
 		justify-content: center;
 	}
 	.about-section {
-		display: none;
+		// display: none;
 		align-items: center;
 		max-width: 700px;
 		max-height: 700px;
