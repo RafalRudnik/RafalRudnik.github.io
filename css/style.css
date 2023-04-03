@@ -308,12 +308,11 @@ footer {
 .slider-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 12px;
   justify-content: center;
   width: 100%;
 }
 .slider-wrapper .slider {
-  padding: 20px 0px 100px 0px;
+  padding: 20px 12px 100px 12px;
 }
 .slider-wrapper .slider img {
   width: 100%;
