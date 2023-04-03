@@ -311,10 +311,9 @@ footer {
   padding: 12px;
   justify-content: center;
   width: 100%;
-  height: 100vh;
 }
 .slider-wrapper .slider {
-  padding: 30px 0px;
+  padding: 20px 0px 100px 0px;
 }
 .slider-wrapper .slider img {
   width: 100%;
@@ -336,6 +335,7 @@ footer {
 }
 .slider-wrapper .slider .slider-desc p {
   color: #03c987;
+  letter-spacing: 1px;
 }
 .slider-wrapper .slider .slider-desc .portfolio-btn {
   padding: 10px 10px;
@@ -349,6 +349,7 @@ footer {
 .slider-wrapper .slider .slider-desc .portfolio-btn a {
   color: #000000;
   text-decoration: none;
+  letter-spacing: 2px;
 }
 .slider-wrapper .slider .slider-desc .portfolio-btn:hover {
   opacity: 1;
