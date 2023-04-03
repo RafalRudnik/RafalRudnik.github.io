@@ -306,45 +306,48 @@ footer {
 }
 
 .slider-wrapper {
-  position: relative;
+  padding: 12px;
+  align-self: center;
   width: 100%;
-  margin: 0 auto;
 }
 .slider-wrapper .slider {
-  position: relative;
-  display: flex;
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  border-radius: 15px;
+  padding-bottom: 30px;
 }
 .slider-wrapper .slider img {
-  position: relative;
   width: 100%;
-  flex: 1 0 100%;
-  scroll-snap-align: start;
-  -o-object-fit: cover;
-     object-fit: cover;
+  border-radius: 15px;
 }
-.slider-wrapper .slider-nav {
-  position: absolute;
-  left: 50%;
-  bottom: -20px;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 1;
+.slider-wrapper .slider .slider-desc {
+  text-align: center;
 }
-.slider-wrapper .slider-nav a {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
+.slider-wrapper .slider .slider-desc h2,
+.slider-wrapper .slider .slider-desc p {
+  display: block;
+  padding: 10px 0px;
+}
+.slider-wrapper .slider .slider-desc h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: rgb(239, 234, 234);
+}
+.slider-wrapper .slider .slider-desc p {
+  color: #03c987;
+}
+.slider-wrapper .slider .slider-desc .portfolio-btn {
+  padding: 10px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
   background-color: #42b883;
-  padding: 5px;
-  opacity: 0.6;
+  opacity: 0.8;
   transition: opacity 0.4s;
 }
-.slider-wrapper .slider-nav a:hover {
+.slider-wrapper .slider .slider-desc .portfolio-btn a {
+  color: #000000;
+  text-decoration: none;
+}
+.slider-wrapper .slider .slider-desc .portfolio-btn:hover {
   opacity: 1;
 }
 

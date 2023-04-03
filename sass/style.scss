@@ -302,46 +302,47 @@ footer {
 // ====================== PORTFOLIO SECTION ======================
 
 .slider-wrapper {
-	position: relative;
+	padding: 12px;
+	align-self: center;
 	width: 100%;
-	margin: 0 auto;
 	.slider {
-		position: relative;
-		display: flex;
-		// flex-direction: column;
-		overflow-x: hidden;
-		scroll-snap-type: y mandatory;
-		scroll-behavior: smooth;
-		border-radius: 15px;
-
+		padding-bottom: 30px;
 		img {
-			position: relative;
 			width: 100%;
-			flex: 1 0 100%;
-			scroll-snap-align: start;
-			object-fit: cover;
+			border-radius: 15px;
 		}
-	}
-
-	.slider-nav {
-		position: absolute;
-		left: 50%;
-		bottom: -20px;
-		transform: translateX(-50%);
-		display: flex;
-		gap: 10px;
-		z-index: 1;
-		a {
-			width: 8px;
-			height: 8px;
-			border-radius: 50%;
-			background-color: $light-g;
-			padding: 5px;
-			opacity: 0.6;
-			transition: opacity 0.4s;
-		}
-		a:hover {
-			opacity: 1;
+		.slider-desc {
+			text-align: center;
+			h2,
+			p {
+				display: block;
+				padding: 10px 0px;
+			}
+			h2 {
+				text-transform: uppercase;
+				font-size: 20px;
+				letter-spacing: 2px;
+				color: $main-txt;
+			}
+			p {
+				color: $green-sh;
+			}
+			.portfolio-btn {
+				padding: 10px 10px;
+				border: none;
+				border-radius: 15px;
+				font-size: 14px;
+				background-color: $light-g;
+				opacity: 0.8;
+				transition: opacity 0.4s;
+				a {
+					color: $black-col;
+					text-decoration: none;
+				}
+			}
+			.portfolio-btn:hover {
+				opacity: 1;
+			}
 		}
 	}
 }

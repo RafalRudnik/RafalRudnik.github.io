@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafal Rudnik portfolio</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2e30f62455.js" crossorigin="anonymous"></script>
 
@@ -94,14 +95,19 @@
             <div class="slider-wrapper">
                 <div class="slider">
                     <img id="slide-1" src="./img/Project_2.png" alt="Project photo">
-                    
-                    <img id="slide-2" src="./img/Project_3.jpg" alt="Project photo">
-        
+                    <div class="slider-desc">
+                        <h2>art gallery page</h2>
+                        <p>Technologies used: HTML, CSS, JS</p>
+                        <button class="portfolio-btn"><a href="#">Repository</a></button>
+                    </div>
                 </div>
-                <div class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
+                <div class="slider">
+                    <img id="slide-1" src="./img/Project_3.jpg" alt="Project photo">
+                    <div class="slider-desc">
+                        <h2>international logistic page</h2>
+                        <p>Technologies used: HTML, CSS, JS</p>
+                        <button class="portfolio-btn"><a href="#">Repository</a></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -131,6 +137,10 @@
         <p>&copy; reserved BNC Rafał Rudnik</p>
     </footer>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./slick.js"></script>
     <script src="./main.js"></script>
 
 </body>
