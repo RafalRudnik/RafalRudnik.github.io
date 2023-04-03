@@ -138,6 +138,7 @@ nav .profile .profile-img {
 }
 nav i {
   position: absolute;
+  display: block;
   top: 0;
   color: #42b883;
   z-index: -1;
