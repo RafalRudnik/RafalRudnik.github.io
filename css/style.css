@@ -347,9 +347,10 @@ footer {
   transition: opacity 0.4s;
 }
 .slider-wrapper .slider .slider-desc .portfolio-btn a {
+  font-weight: bold;
   color: #000000;
   text-decoration: none;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
 }
 .slider-wrapper .slider .slider-desc .portfolio-btn:hover {
   opacity: 1;

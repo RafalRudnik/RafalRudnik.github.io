@@ -341,9 +341,10 @@ footer {
 				opacity: 0.8;
 				transition: opacity 0.4s;
 				a {
+					font-weight: bold;
 					color: $black-col;
 					text-decoration: none;
-					letter-spacing: 2px;
+					letter-spacing: 1.2px;
 				}
 			}
 			.portfolio-btn:hover {
