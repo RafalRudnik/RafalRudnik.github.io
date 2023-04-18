@@ -198,7 +198,7 @@ ul .links a {
 }
 ul .links a:hover {
   opacity: 1;
-  animation: linkAnim 0.7s linear both;
+  animation: linkAnim 0.5s linear both;
 }
 
 .active-link {
@@ -313,7 +313,8 @@ footer {
   width: 100%;
 }
 .slider-wrapper .slider {
-  padding: 20px 12px 100px 12px;
+  padding: 20px 12px 50px 12px;
+  overflow: hidden;
 }
 .slider-wrapper .slider img {
   width: 100%;
@@ -449,6 +450,10 @@ footer {
     font-size: 3rem;
     line-height: 6rem;
     letter-spacing: 1px;
+  }
+  .slider {
+    align-self: center;
+    justify-self: center;
   }
 }
 .display-off {

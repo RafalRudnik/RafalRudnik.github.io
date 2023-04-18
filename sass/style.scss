@@ -183,7 +183,7 @@ ul {
 
 	.links a:hover {
 		opacity: 1;
-		animation: linkAnim 0.7s linear both;
+		animation: linkAnim 0.5s linear both;
 	}
 }
 
@@ -307,10 +307,9 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	width: 100%;
-	// height: 100vh;
 	.slider {
-		padding: 20px 12px 100px 12px;
-
+		padding: 20px 12px 50px 12px;
+		overflow: hidden;
 		img {
 			width: 100%;
 			border-radius: 15px;
@@ -444,6 +443,11 @@ footer {
 			line-height: 6rem;
 			letter-spacing: 1px;
 		}
+	}
+	.slider {
+		align-self: center;
+		justify-self: center;
+		// padding: 50px 12px 150px 12px;
 	}
 }
 
