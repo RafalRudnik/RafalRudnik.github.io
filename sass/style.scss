@@ -2,7 +2,7 @@
 @use './variables' as *;
 
 @mixin btnMx {
-	padding: 20px 10px;
+	padding: 10px 20px;
 	background-color: $green-sh;
 	color: $black-col;
 	border-radius: 15px;
@@ -333,11 +333,7 @@ footer {
 				letter-spacing: 1px;
 			}
 			.portfolio-btn {
-				padding: 10px 10px;
-				border: none;
-				border-radius: 15px;
-				font-size: 14px;
-				background-color: $light-g;
+				@include btnMx();
 				opacity: 0.8;
 				transition: opacity 0.4s;
 				a {

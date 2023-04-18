@@ -338,11 +338,11 @@ footer {
   letter-spacing: 1px;
 }
 .slider-wrapper .slider .slider-desc .portfolio-btn {
-  padding: 10px 10px;
-  border: none;
+  padding: 10px 20px;
+  background-color: #03c987;
+  color: #000000;
   border-radius: 15px;
-  font-size: 14px;
-  background-color: #42b883;
+  cursor: pointer;
   opacity: 0.8;
   transition: opacity 0.4s;
 }
@@ -388,7 +388,7 @@ footer {
   outline: #03c987;
 }
 .form-not-send .btn {
-  padding: 20px 10px;
+  padding: 10px 20px;
   background-color: #03c987;
   color: #000000;
   border-radius: 15px;
