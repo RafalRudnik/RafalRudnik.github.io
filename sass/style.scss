@@ -105,6 +105,7 @@ body {
 nav {
 	position: relative;
 	align-self: center;
+	padding: 20px;
 	.nav-top {
 		display: flex;
 		gap: 10px;
@@ -177,12 +178,11 @@ ul {
 		letter-spacing: 2px;
 		color: $main-txt;
 		opacity: 0.8;
-		transition: font-size 0.5s;
+		transition: opacity 0.3s;
 	}
 
 	.links a:hover {
 		opacity: 1;
-		font-size: 1.7rem;
 		animation: linkAnim 0.7s linear both;
 	}
 }

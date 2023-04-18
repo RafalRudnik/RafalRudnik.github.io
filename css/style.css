@@ -123,6 +123,7 @@ body {
 nav {
   position: relative;
   align-self: center;
+  padding: 20px;
   animation: sectionOn 2s 0.5s both;
 }
 nav .nav-top {
@@ -193,11 +194,10 @@ ul .links a {
   letter-spacing: 2px;
   color: rgb(239, 234, 234);
   opacity: 0.8;
-  transition: font-size 0.5s;
+  transition: opacity 0.3s;
 }
 ul .links a:hover {
   opacity: 1;
-  font-size: 1.7rem;
   animation: linkAnim 0.7s linear both;
 }
 
