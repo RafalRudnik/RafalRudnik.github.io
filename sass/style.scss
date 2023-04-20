@@ -104,19 +104,17 @@ body {
 }
 nav {
 	position: relative;
-	align-self: center;
+	align-self: start;
 	padding: 20px;
+	width: 100%;
+	// border: 1px solid yellow;
 	.nav-top {
 		display: flex;
 		gap: 10px;
 	}
 
 	.profile {
-		max-width: 140px;
-		align-self: flex-start;
-		.profile-img {
-			width: 100%;
-		}
+		display: none;
 	}
 
 	i {
@@ -410,6 +408,19 @@ footer {
 		max-width: 1200px;
 		align-items: center;
 		justify-content: center;
+	}
+
+	nav {
+		align-self: center;
+		width: auto;
+		.profile {
+			display: block;
+			max-width: 140px;
+			align-self: flex-start;
+			.profile-img {
+				width: 100%;
+			}
+		}
 	}
 	.about-section {
 		// display: none;

@@ -122,8 +122,9 @@ body {
 
 nav {
   position: relative;
-  align-self: center;
+  align-self: start;
   padding: 20px;
+  width: 100%;
   animation: sectionOn 2s 0.5s both;
 }
 nav .nav-top {
@@ -131,11 +132,7 @@ nav .nav-top {
   gap: 10px;
 }
 nav .profile {
-  max-width: 140px;
-  align-self: flex-start;
-}
-nav .profile .profile-img {
-  width: 100%;
+  display: none;
 }
 nav i {
   position: absolute;
@@ -420,6 +417,18 @@ footer {
     max-width: 1200px;
     align-items: center;
     justify-content: center;
+  }
+  nav {
+    align-self: center;
+    width: auto;
+  }
+  nav .profile {
+    display: block;
+    max-width: 140px;
+    align-self: flex-start;
+  }
+  nav .profile .profile-img {
+    width: 100%;
   }
   .about-section {
     align-items: center;
