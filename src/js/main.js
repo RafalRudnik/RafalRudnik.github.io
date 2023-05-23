@@ -4,6 +4,7 @@ const navMobile = document.querySelector('.nav-mobile');
 const navMobileItems = document.querySelectorAll('.nav__link-m');
 const headerItem = document.querySelector('.header__main-txt');
 
+
 const handleNav = () => {
 	navBtn.classList.toggle('is-active');
 	navMobile.classList.toggle('nav-mobile-active');
@@ -46,6 +47,9 @@ const handleHeaderAnim = () => {
 		headerItem.classList.add('header__main-txt-mainAnim');
 	}
 };
+
+
+
 
 navBtn.addEventListener('click', handleNav);
 navBtn.addEventListener('mouseenter', navBtnAnimation);
