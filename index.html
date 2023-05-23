@@ -5,156 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="BNC Rafal Rudnik, Rafal Frontend, Front-end, webdev, websites, responsive websites, github">
-    <meta name="description"
-        content="BNC Rafal Rudnik, Rafal Frontend, Front-end, webdev, tworzenie stron internetowych, building websites, responsywne strony, responsive websites">
-    <title>Rafal Rudnik portfolio</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Nova+Slim&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/2e30f62455.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="dist/css/hamburger.min.css">
+    <link rel="stylesheet" href="dist/css/main.min.css">
+    <title>Rafał Rudnik | twórca stron internetowych</title>
 </head>
 
 <body>
+    <header>
 
+        <div class="header__main-txt header__main-txt-mainAnim">
+            <h1>Rafał<span>Rudnik</span></h1>
+            <small><i class="fa-solid fa-globe"></i>Gdańsk Poland</small>
+        </div>
 
+        <div class="loading-page">
 
-    <div class="container">
+        </div>
 
-        <nav>
-            <i class="fa-brands fa-square-js"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-html5"></i>
-            <div class="nav-top">
-                <div class="profile">
-                    <img src="./img/IMG_0931.png" alt="profile photo of Rafal Rudnik" class="profile-img" />
-                </div>
-                <ul>
-                    <h2>BNC</h2>
-                    <p class="p-nav">Rafał</p>
-                    <p class="p-nav">Rudnik</p>
-                    <li class="links"><a href="#home" class="home-link">Home</a></li>
-                    <li class="links"><a href="#top" class="about-link">About</a></li>
-                    <li class="links"><a href="#portfolio" class="profile-link">Portfolio</a></li>
-                    <li class="links"><a href="#contact" class="contact-link">Contact</a></li>
-                </ul>
-            </div>
+        <div class="logo">
+            <a href="#"><img src="./dist/img/logo.png" alt="logo"></a>
+        </div>
+
+        <nav class="nav nav-desctop">
+            <a class="nav__link" href="#about">About</a>
+            <a class="nav__link" href="#work">Work</a>
+            <a class="nav__link" href="#contact">Contact</a>
         </nav>
 
-        <section id="home" class="sections home-section">
+        <div class="arrow">
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
 
-            <h1>Hi <span>My name is Rafał I'm:</span></h1>
-            <p class="p-home">Beginner Frontend developer</p>
-            <p class="p-home">Web designer</p>
-            <p class="p-home">I love IT!</p>
+    </header>
 
+    <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
 
-        </section>
+    <nav class="nav nav-mobile">
+        <a class="nav__link nav__link-m" href="#about">About</a>
+        <a class="nav__link nav__link-m" href="#work">Work</a>
+        <a class="nav__link nav__link-m" href="#contact">Contact</a>
+    </nav>
 
-        <section id="about" class="sections about-section">
-            <i class="fa-solid fa-code"></i>
-            <div class="about-work">
-                <h2>Buisness, work:</h2>
-                <p class="about-description">
-                    I'm owner of BNC Rafal Rudnik - international forwarding company since 2017. I've decide to change
-                    my carrier and enter the world of computer science again. I wish to start from Front-end dev.I
-                    Prefer B&B contracts over full time and appreciate flexible working hours. I'm looking for
-                    opportunity to elevate as worker, programmer and person.
-                    Since 2023, I offer my services in creating and modernizing responsive websites.
+    <main>
 
-                </p>
-            </div>
-            <div class="about-knowledge">
-                <h2>Plans and knowledge:</h2>
-                <p class="about-description">
-                    I've studied computer science at Zielona Gora University - Poland. Finished Cicso CCNA Academy. I am
-                    learning frontend on my own, currently I have knowledge in the field of HTML, CSS, SCSS, Javascript,
-                    Bootstrap.
-                    Next, I'm going to gain knowledge and skills in creating web applications using React and Tailwind.
-                    Languages: English and Polish - national.
-
-                </p>
-            </div>
-            <div class="about-sport">
-                <h2>Sport:</h2>
-                <p class="about-description">
-                    I'm big fan of NBA Basketball. Favorite player and sport icon Allen Iverson. Like to watch athletic
-                    competitions, ride a bike.
-                </p>
-            </div>
-            <div class="about-hobby">
-                <h2>Hobby:</h2>
-                <p class="about-description">
-                    I'm fan of video games, good movies - thrillers. Walk on beach, spending time with my son - Lego
-                    building.My hobby is also coding. I wish to treat my work as fun, do it with smile. Only then i can
-                    work with passion.
-                </p>
-            </div>
-        </section>
-
-        <section id="portfolio" class="sections portfolio-section">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <img id="slide-1" src="./img/Project_1.png" alt="Project photo">
-                    <div class="slider-desc">
-                        <h2>web-dev page</h2>
-                        <p>Technologies used: HTML, CSS, JS, BOOTSTRAP</p>
-                        <button class="portfolio-btn"><a href="#">GitHub</a></button>
-                    </div>
+        <section class="section about" id="about">
+            <div class="about__left">
+                <div class="about__left-info">
                 </div>
-                <div class="slider">
-                    <img id="slide-1" src="./img/Project_2.png" alt="Project photo">
-                    <div class="slider-desc">
-                        <h2>art gallery page</h2>
-                        <p>Technologies used: HTML, CSS, JS</p>
-                        <button class="portfolio-btn"><a href="#">GitHub</a></button>
-                    </div>
-                </div>
-                <div class="slider">
-                    <img id="slide-1" src="./img/Project_3.jpg" alt="Project photo">
-                    <div class="slider-desc">
-                        <h2>international logistic page</h2>
-                        <p>Technologies used: HTML, CSS, JS</p>
-                        <button class="portfolio-btn"><a href="#">GitHub</a></button>
-                    </div>
+                <i class="fa-solid fa-info"></i>
+
+                <div class="about__left-txt">
+                    <h2>About me:</h2>
+                    <h3>Studdies:</h3>
+                    <h3>Experience:</h3>
+                    <h3>Hobbies:</h3>
                 </div>
             </div>
-        </section>
+            <div class="about__right">
 
-        <section id="contact" class="sections contact-section">
-            <form action="https://formsubmit.io/send/bnc.webdev@gmail.com" method="POST" class="form-not-send">
-                <i class="fa-solid fa-at"></i>
-                <input type="mail" name="mail" id="mail" placeholder="e-mail address" required>
-                <textarea name="msg" id="msg" cols="30" rows="10"
-                    placeholder="Please enter massage and name"></textarea>
-                <input type="submit" value="SEND" id="" class="btn"></button>
-                <input name="_redirect" type="hidden" id="name" value="https://rafalrudnik.github.io/#contact">
-            </form>
-            <div class="massage-send">
-                <p class="about-description">
-                    Thak you, massage send <i class="fa-regular fa-paper-plane"></i>
-                </p>
             </div>
         </section>
 
-
-    </div>
-
+    </main>
 
 
-    <footer>
-        <p>&copy; reserved BNC Rafał Rudnik</p>
-    </footer>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./slick.js"></script>
-    <script src="./main.js"></script>
-
+    <script src="/dist/js/main.min.js"></script>
 </body>
 
 </html>

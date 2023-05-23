@@ -1,0 +1,106 @@
+@media (min-width: 768px) {
+	.hamburger {
+		top: 80px;
+		right: 80px;
+		padding: 3em;
+	}
+
+	header {
+		background-image: url('/dist/img/hero-big.jpg');
+		margin-bottom: 100px;
+	}
+	.nav {
+		&-desctop {
+			display: flex;
+		}
+		&-mobile {
+			font-size: 4rem;
+			.nav__link-m {
+				padding: 0.2em;
+			}
+		}
+	}
+	.header__main-txt {
+		right: 50px;
+		bottom: 50px;
+		h1 {
+			font-size: 7rem;
+			font-weight: 300;
+		}
+	}
+	.about {
+		display: flex;
+		flex-direction: row;
+		height: 100vh;
+		&__left {
+			background-color: $black-color;
+			width: 50%;
+			background-image: url('/dist/img/about-big.jpg');
+
+			i {
+				position: absolute;
+				top: 60px;
+				left: 80px;
+				color: $grey-main;
+				font-size: 4rem;
+				z-index: 20;
+				transition: color 0.3s;
+				&:hover {
+					color: $hamburger-hover;
+				}
+				&:hover ~ .about__left-txt {
+					clip-path: circle(120% at 50% 90%);
+				}
+			}
+			&-info {
+				position: absolute;
+				top: 62px;
+				left: 83px;
+				width: 8px;
+				height: 8px;
+				padding: 0.1em;
+				border-radius: 50%;
+				border: 1px transparent;
+				z-index: 19;
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					border: 0.5px solid $grey-main;
+					animation: infoAnim 2s 0s infinite both;
+					z-index: 21;
+				}
+			}
+			&-txt {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 100%;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				left: 0;
+				padding: 8em 3em;
+				background-color: rgba(0, 0, 0, 0.85);
+				color: white;
+				clip-path: circle(0% at 50% 90%);
+				transition: clip-path 0.8s;
+				h2 {
+					margin-bottom: 3em;
+					font-style: italic;
+					text-align: center;
+					letter-spacing: 2px;
+				}
+			}
+		}
+		&__right {
+			width: 50%;
+			order: 0;
+		}
+	}
+}

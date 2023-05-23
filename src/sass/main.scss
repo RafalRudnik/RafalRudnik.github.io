@@ -1,0 +1,200 @@
+@use './hamburger' as *;
+@use './colors' as *;
+@use './animations' as *;
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Nova Slim', cursive;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.section {
+	height: 100vh;
+}
+
+header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100vh;
+	padding: 3em;
+	background-image: url('/dist/img/hero-sm.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+header::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: -1;
+}
+
+.loading-page {
+	position: absolute;
+	display: none;
+}
+
+.arrow {
+	position: absolute;
+	left: 40px;
+	bottom: 0px;
+	color: $grey-main;
+	font-size: 3rem;
+	animation: bounce-top 4s both;
+}
+.header__main-txt {
+	position: absolute;
+	right: 20px;
+	bottom: 40px;
+	color: $h1-color;
+
+	h1 {
+		letter-spacing: 2px;
+		font-size: 5rem;
+		font-weight: 300;
+		span {
+			display: block;
+		}
+	}
+	small {
+		display: inline-block;
+		color: $small;
+		font-size: 1.6rem;
+		margin-top: 0;
+		i {
+			margin-right: 1em;
+			animation: worldspin 10s infinite linear both;
+		}
+	}
+}
+.header__main-txt-mainAnim {
+	animation: headAnim 1s 0s linear both;
+}
+
+.header__main-txt-anim {
+	animation: headAnimScroll 1s 0s linear both;
+}
+
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 3em;
+	font-size: 2rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+	&__link {
+		position: relative;
+		color: $grey-main;
+		transition: opacity 0.3s;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0px;
+			height: 2px;
+			width: 100%;
+			background-color: $grey-main;
+			scale: 0;
+			transition: scale 0.3s;
+		}
+		&:hover {
+			opacity: 0.8;
+		}
+		&:hover::after {
+			scale: 1;
+		}
+	}
+	&-desctop {
+		display: none;
+	}
+	&-mobile {
+		position: fixed;
+		top: 0;
+		left: 0;
+		flex-direction: column;
+		justify-items: center;
+		align-items: center;
+		width: 100%;
+		height: 100vh;
+		font-size: 2rem;
+		transform: translateX(100%);
+		background-color: $black-color;
+		z-index: 19;
+		transition: transform 0.8s;
+		.nav__link-m {
+			padding: 1em;
+		}
+	}
+	&-mobile-active {
+		transform: translateX(0%);
+	}
+}
+
+.nav-item-animation {
+	animation: navItemsAnimation 1s both;
+}
+
+.jello-horizontal {
+	-webkit-animation: jello-horizontal 0.9s both;
+	animation: jello-horizontal 0.9s both;
+}
+
+// about section
+
+.about {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	height: 200vh;
+	&__left {
+		position: relative;
+		display: flex;
+		background-color: rgb(12, 12, 12);
+		width: 100%;
+		height: 100vh;
+		background-image: url('/dist/img/about-sm.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+	&__right {
+		width: 100%;
+		height: 100vh;
+	}
+}
+
+@import './medium';
+@import './large';
