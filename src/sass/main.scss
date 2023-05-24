@@ -204,6 +204,7 @@ header::after {
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
+		background-attachment: fixed;
 		&::after {
 			content: '';
 			position: absolute;

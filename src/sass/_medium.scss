@@ -37,11 +37,12 @@
 	.about {
 		display: flex;
 		flex-direction: row;
+		background-color: $grey-main;
 		height: 100vh;
 		&__left {
 			background-color: $black-color;
 			width: 50%;
-			height: 100%;
+			height: 80%;
 			background-image: url('/dist/img/about-big.jpg');
 
 			i {
@@ -105,6 +106,9 @@
 					text-align: center;
 					letter-spacing: 2px;
 				}
+				h3 {
+					font-style: italic;
+				}
 				h3,
 				p {
 					margin-bottom: 3em;
@@ -115,7 +119,7 @@
 		}
 		&__right {
 			width: 50%;
-			height: 100%;
+			height: 80%;
 		}
 		&__righ-txt {
 			width: 100%;
