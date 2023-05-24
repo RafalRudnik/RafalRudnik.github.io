@@ -37,12 +37,11 @@
 	.about {
 		display: flex;
 		flex-direction: row;
-		background-color: $grey-main;
-		height: 100vh;
+		// height: 120vh;
 		&__left {
 			background-color: $black-color;
 			width: 50%;
-			height: 80%;
+			// height: 1000px;
 			background-image: url('/dist/img/about-big.jpg');
 			i {
 				position: absolute;
