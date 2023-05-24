@@ -41,8 +41,9 @@
 		&__left {
 			background-color: $black-color;
 			width: 50%;
-			// height: 1000px;
+			// min-height: 100vh;
 			background-image: url('/dist/img/about-big.jpg');
+			background-size: cover;
 			i {
 				position: absolute;
 				top: 60px;
