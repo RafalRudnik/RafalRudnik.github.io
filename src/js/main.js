@@ -5,6 +5,8 @@ const navMobileItems = document.querySelectorAll('.nav__link-m');
 const headerItem = document.querySelector('.header__main-txt');
 
 
+
+
 const handleNav = () => {
 	navBtn.classList.toggle('is-active');
 	navMobile.classList.toggle('nav-mobile-active');
@@ -50,9 +52,9 @@ const handleHeaderAnim = () => {
 
 
 
-
 navBtn.addEventListener('click', handleNav);
 navBtn.addEventListener('mouseenter', navBtnAnimation);
 navMobileItems.forEach((item) => item.addEventListener('click', handleNav));
 window.addEventListener('scroll', handleShowBurger);
 window.addEventListener('scroll', handleHeaderAnim);
+window.addEventListener('scroll', handleObserver);

@@ -13,7 +13,7 @@
 
 	header {
 		background-image: url('/dist/img/hero-big.jpg');
-		margin-bottom: 100px;
+		// margin-bottom: 100px;
 	}
 	.nav {
 		&-desctop {
@@ -100,6 +100,7 @@
 				z-index: 1;
 				h2 {
 					margin-bottom: 3em;
+					font-size: 4rem;
 					font-style: italic;
 					text-align: center;
 					letter-spacing: 2px;
