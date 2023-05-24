@@ -98,6 +98,12 @@
 					text-align: center;
 					letter-spacing: 2px;
 				}
+				h3,
+				p {
+					margin-bottom: 3em;
+					color: $grey-main;
+					letter-spacing: 2px;
+				}
 			}
 		}
 		&__right {
