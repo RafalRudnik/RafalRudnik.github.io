@@ -11,6 +11,12 @@
 		font-size: 6rem;
 	}
 	.about {
+		&__right {
+			.fa-laptop-code {
+				left: 0;
+				font-size: 206rem;
+			}
+		}
 		&__righ-txt {
 			width: 50%;
 		}

@@ -193,6 +193,7 @@ header::after {
 	justify-content: center;
 	align-items: center;
 	height: fit-content;
+	overflow: hidden;
 	&__left {
 		position: relative;
 		background-color: rgb(12, 12, 12);
@@ -200,17 +201,19 @@ header::after {
 		height: 100vh;
 		background-image: url('/dist/img/about-sm.jpg');
 		background-position: center;
-		background-size: cover;
-		// &::after {
-		// 	content: '';
-		// 	position: absolute;
-		// 	top: 0;
-		// 	left: 0;
-		// 	width: 100%;
-		// 	height: 100%;
-		// 	background-color: rgba(0, 0, 0, 0.4);
-		// 	z-index: 0;
-		// }
+		background-size: contain;
+		background-repeat: no-repeat;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.4);
+			z-index: 0;
+		}
+
 		&-txt {
 			display: none;
 		}
@@ -224,19 +227,27 @@ header::after {
 		// height: 100vh;
 		padding: 0.8em;
 		background-color: $grey-main;
-		i {
+		overflow: hidden;
+		.fa-laptop-code {
 			position: absolute;
-			top: 20%;
-			left: 20%;
+			top: -30%;
+			left: -70%;
 			transform: translate(-50%, -50%);
-			font-size: 50rem;
+			font-size: 160rem;
+			opacity: 0.03;
+			animation: worldspin 400s 0s infinite both;
+		}
+		.fa-terminal {
+			position: absolute;
+			bottom: 10%;
+			right: 10%;
+			font-size: 15rem;
 			opacity: 0.1;
-			animation: worldspin 90s 0s infinite both;
+			animation: worldspin-back 150s 0s infinite both;
 		}
 	}
 	&__righ-txt {
 		margin-bottom: 3em;
-		overflow: hidden;
 		h3 {
 			font-style: italic;
 		}
