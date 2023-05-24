@@ -23,6 +23,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
 	overflow-x: hidden;
+	// background-color: rgb(12, 12, 12);
 }
 
 a {
@@ -35,6 +36,17 @@ textarea {
 
 .section {
 	height: 100vh;
+}
+
+.wrapper {
+	width: 1200px;
+	max-width: 1200px;
+	height: 100%;
+}
+
+.underline {
+	width: 30%;
+	margin: 1em 0;
 }
 
 header {
@@ -74,8 +86,6 @@ header::after {
 	font-size: 3rem;
 	animation: bounce-top 4s both;
 }
-
-
 
 .header__main-txt {
 	position: absolute;
@@ -182,22 +192,61 @@ header::after {
 	flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
-	height: 200vh;
+	height: fit-content;
 	&__left {
 		position: relative;
-		display: flex;
 		background-color: rgb(12, 12, 12);
 		width: 100%;
 		height: 100vh;
 		background-image: url('/dist/img/about-sm.jpg');
 		background-position: center;
 		background-size: cover;
+		// &::after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	background-color: rgba(0, 0, 0, 0.4);
+		// 	z-index: 0;
+		// }
+		&-txt {
+			display: none;
+		}
 	}
 	&__right {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
 		width: 100%;
-		height: 100vh;
+		// height: 100vh;
+		padding: 0.8em;
+		background-color: $grey-main;
+		i {
+			position: absolute;
+			top: 20%;
+			left: 20%;
+			transform: translate(-50%, -50%);
+			font-size: 50rem;
+			opacity: 0.1;
+			animation: worldspin 90s 0s infinite both;
+		}
+	}
+	&__righ-txt {
+		margin-bottom: 3em;
+		overflow: hidden;
+		h3 {
+			font-style: italic;
+		}
+	}
+	&__right-desc {
+		line-height: 2rem;
+		letter-spacing: 1.5px;
 	}
 }
 
 @import './medium';
 @import './large';
+@import './small';

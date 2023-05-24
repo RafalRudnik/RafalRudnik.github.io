@@ -1,0 +1,4 @@
+# Grouup 1
+User-agent: *
+Disallow: /src
+

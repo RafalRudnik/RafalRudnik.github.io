@@ -10,6 +10,11 @@
 	.arrow {
 		font-size: 6rem;
 	}
+	.about {
+		&__righ-txt {
+			width: 50%;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
