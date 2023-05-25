@@ -41,9 +41,9 @@
 		&__left {
 			background-color: $black-color;
 			width: 50%;
-			// min-height: 100vh;
+
 			background-image: url('/dist/img/about-big.jpg');
-			background-size: cover;
+			background-size: contain;
 			i {
 				position: absolute;
 				top: 60px;
@@ -97,7 +97,7 @@
 				color: white;
 				clip-path: circle(0% at 50% 90%);
 				transition: clip-path 0.8s;
-				z-index: 1;
+				z-index: 22;
 				h2 {
 					margin-bottom: 3em;
 					font-size: 4rem;
