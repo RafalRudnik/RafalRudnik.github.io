@@ -204,9 +204,9 @@ header::after {
 		min-height: 100vh;
 		background-image: url('/dist/img/about-sm.jpg');
 		background-position: center;
-		background-size: cover !important;
+		background-size: contain;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
+
 		&::after {
 			content: '';
 			position: absolute;
@@ -267,6 +267,10 @@ header::after {
 		font-size: 1.4rem;
 	}
 }
+
+// WORK
+
+
 
 @import './medium';
 @import './large';
