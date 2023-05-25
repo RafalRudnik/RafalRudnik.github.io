@@ -23,7 +23,8 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.6rem;
 	overflow-x: hidden;
-	// background-color: rgb(12, 12, 12);
+	margin: 0 auto;
+	background-color: $grey-main;
 }
 
 a {
@@ -39,7 +40,7 @@ textarea {
 // }
 
 .wrapper {
-	width: 1200px;
+	display: flex;
 	max-width: 1200px;
 	height: 100%;
 }
@@ -199,9 +200,9 @@ header::after {
 	overflow: hidden;
 	&__left {
 		position: relative;
-		background-color: rgb(12, 12, 12);
 		width: 100%;
 		min-height: 100vh;
+		background-color: rgb(20, 20, 20);
 		background-image: url('/dist/img/about-sm.jpg');
 		background-position: center;
 		background-size: contain;
@@ -214,13 +215,13 @@ header::after {
 			left: 0;
 			width: 100%;
 			min-height: 100vh;
-			background-color: rgba(0, 0, 0, 0.4);
+			background-color: rgba(0, 0, 0, 0.3);
 			z-index: 1;
 		}
 
 		&-txt {
 			display: none;
-			font-size: 1.4rem;
+			font-size: 1.6rem;
 		}
 	}
 	&__right {
@@ -238,7 +239,8 @@ header::after {
 			top: -30%;
 			left: -70%;
 			transform: translate(-50%, -50%);
-			font-size: 160rem;
+			transform: rotate(10deg);
+			font-size: 206rem;
 			opacity: 0.03;
 			animation: worldspin 400s 0s infinite both;
 		}
@@ -261,16 +263,23 @@ header::after {
 	&__right-desc {
 		line-height: 2rem;
 		letter-spacing: 1.5px;
+		font-size: 1.6rem;
+		line-height: 2.5rem;
 		color: $black-color;
-	}
-	&__right-desc {
-		font-size: 1.4rem;
 	}
 }
 
 // WORK
 
+.work {
+	min-height: 100vh;
+}
 
+// CONTACT
+
+.contact {
+	height: 100vh;
+}
 
 @import './medium';
 @import './large';

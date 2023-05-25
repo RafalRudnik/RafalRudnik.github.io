@@ -1,8 +1,32 @@
+gsap.registerPlugin(ScrollTrigger); //scrollSmother tez dobrze dodac ale trzeba go dodac recznie
+
 const loadingAnim = document.querySelector('.loading-page');
 const navBtn = document.querySelector('.hamburger');
 const navMobile = document.querySelector('.nav-mobile');
 const navMobileItems = document.querySelectorAll('.nav__link-m');
 const headerItem = document.querySelector('.header__main-txt');
+const work = document.querySelector('.work');
+
+gsap.fromTo(
+	work.children,
+	{ y: '+=100', opacity: 0 },
+	{
+		y: 0,
+		opacity: 1,
+		stagger: 0.2,
+		duration: 3,
+		ease: 'easeInOut',
+		scrollTrigger: {
+			trigger: work,
+			start: 'top 40%',
+			// end: 'bottom', //gdzie ma sie skonczyc
+			// scrub: true, //scroll dziala w obie strony
+			// markers: true,
+		},
+	}
+);
+
+//stagger to jest opoznienie kazdego kolejnego elementu
 
 const handleNav = () => {
 	navBtn.classList.toggle('is-active');

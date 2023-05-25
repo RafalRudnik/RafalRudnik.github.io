@@ -45,15 +45,13 @@
 			background-size: contain;
 			i {
 				position: absolute;
-				top: 60px;
-				left: 80px;
+				top: 20px;
+				left: 40px;
+				padding: 1em;
 				color: $grey-main;
 				font-size: 4rem;
 				z-index: 20;
 				transition: color 0.3s;
-				&:hover {
-					color: $hamburger-hover;
-				}
 				&:hover ~ .about__left-txt {
 					clip-path: circle(120% at 50% 90%);
 				}
@@ -78,7 +76,7 @@
 					border-radius: 50%;
 					border: 0.5px solid $grey-main;
 					animation: infoAnim 2s 0s infinite both;
-					z-index: 21;
+					z-index: 19;
 				}
 			}
 			&-txt {
@@ -95,8 +93,8 @@
 				background-color: rgba(0, 0, 0, 0.85);
 				color: white;
 				clip-path: circle(0% at 50% 90%);
-				transition: clip-path 0.8s;
-				z-index: 22;
+				transition: clip-path 1s;
+				z-index: 18;
 				h2 {
 					margin-bottom: 3em;
 					font-size: 4rem;
@@ -109,9 +107,13 @@
 				}
 				h3,
 				p {
-					margin-bottom: 3em;
+					margin-bottom: 2em;
 					color: $grey-main;
 					letter-spacing: 2px;
+					line-height: 2.5rem;
+				}
+				a {
+					color: $grey-main;
 				}
 			}
 		}
