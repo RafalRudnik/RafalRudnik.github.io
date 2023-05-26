@@ -36,12 +36,12 @@ gsap.fromTo(
 	{
 		y: 0,
 		opacity: 1,
-		stagger: 0.4,
+		stagger: 0.2,
 		duration: 2,
 		ease: 'easeInOut',
 		scrollTrigger: {
 			trigger: contact,
-			start: 'top 20%',
+			start: 'top 50%',
 			// end: 'bottom', //gdzie ma sie skonczyc
 			// scrub: true, //scroll dziala w obie strony
 			// markers: true,
@@ -51,19 +51,19 @@ gsap.fromTo(
 
 gsap.fromTo(
 	aboutImg,
-	{ x: '-=200', opacity: .9 },
+	{ x: '-=300', opacity: 0.9 },
 	{
 		x: 0,
 		opacity: 1,
 		stagger: 0.2,
-		duration: 2,
+		duration: 1,
 		ease: 'easeInOut',
 		scrollTrigger: {
 			trigger: aboutImg,
 			start: 'top 50%',
-			// end: 'bottom', //gdzie ma sie skonczyc
+			end: 'top 20%', //gdzie ma sie skonczyc
 			scrub: true, //scroll dziala w obie strony
-			// markers: true,
+			markers: true,
 		},
 	}
 );
