@@ -81,8 +81,9 @@
                     <p>I have been dealing with international logistics since 2006. From 2017, I ran my own
                         international forwarding company. From 2023 I am trying to start in the IT sector.</p>
                     <h3>Hobbies:</h3>
-                    <p>Lego bricks, basketball, traveling, thiller movies. 
-                        I like learning new things, playing with my son. And I guess like everyone, sometimes I like to do: nothing.</p>
+                    <p>Lego bricks, basketball, traveling, thiller movies.
+                        I like learning new things, playing with my son. And I guess like everyone, sometimes I like to
+                        do: nothing.</p>
                 </div>
             </div>
             <div class="about__right">
@@ -131,6 +132,40 @@
 
         <section class="section contact" id="contact">
 
+            <div class="contact__img">
+                <img class="contact__img-img" src="/dist/img/contact-sm.jpg" alt="">
+            </div>
+
+            <div class="contact__card">
+
+                <h2 class="contact__header">How can i help You?</h2>
+
+                <form action="mail.php" method="post" class="contact-form">
+
+                    <div class="contact-box">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required placeholder="Rafał Rudnik">
+                    </div>
+                    <div class="contact-box">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="rafal.rudnik@gmail.com">
+                    </div>
+                    <div class="contact-box">
+                        <label for="msg">Massage:</label>
+                        <textarea name="msg" id="msg" required rows="7"
+                            placeholder="We would like to work with you"></textarea>
+                    </div>
+
+                    <button class="sendBtn">Send</button>
+
+
+
+                </form>
+
+            </div>
+
+
+            <p class="msg-status"></p>
 
         </section>
 

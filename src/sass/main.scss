@@ -41,8 +41,12 @@ textarea {
 
 .wrapper {
 	display: flex;
-	max-width: 1200px;
+	align-items: center;
+	justify-items: center;
+	flex-wrap: wrap;
+	max-width: 1600px;
 	height: 100%;
+	background-color: #fff;
 }
 
 .underline {
@@ -195,7 +199,7 @@ header::after {
 	justify-content: center;
 	align-items: center;
 	height: fit-content;
-	padding: 80px 0px;
+	padding: 8em 0em;
 	background-color: $grey-main;
 	overflow: hidden;
 	&__left {
@@ -272,13 +276,114 @@ header::after {
 // WORK
 
 .work {
+	padding: 8em 0em;
 	min-height: 100vh;
 }
 
 // CONTACT
 
 .contact {
-	height: 100vh;
+	position: relative;
+	min-height: 100vh;
+	padding-bottom: 8em;
+	background-color: black;
+	&__card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		min-height: 80vh;
+		max-width: 1600px;
+	}
+	&__img {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 80%;
+		height: fit-content;
+		&-img {
+			width: 100%;
+			object-fit: cover;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+	}
+
+	&__header {
+		position: relative;
+		display: inline-block;
+		align-self: flex-start;
+		color: $grey-main;
+		margin: 3em 1em;
+		font-style: italic;
+		font-size: 2rem;
+		letter-spacing: 1.5px;
+		z-index: 1;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0px;
+			width: 100%;
+			height: 1px;
+			background-color: #fff;
+			opacity: 0.5;
+		}
+	}
+
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2em;
+		z-index: 1;
+		width: 80%;
+		.sendBtn {
+			padding: 1em 2em;
+			font-size: 1.8rem;
+			width: 40%;
+			color: #fff;
+			border: 1px solid $grey-main;
+			border-radius: 8px;
+			background-color: transparent;
+			cursor: pointer;
+			transition: color 0.3s, background-color 0.3s;
+			&:hover {
+				color: $black-color;
+				background-color: $grey-main;
+			}
+		}
+	}
+	.contact-box {
+		width: 100%;
+		label {
+			display: block;
+			padding-bottom: 1em;
+			color: $grey-main;
+			letter-spacing: 1px;
+		}
+		input,
+		textarea {
+			width: 100%;
+			padding: 1em 1.4em;
+			border: 1px solid $grey-main;
+			background-color: transparent;
+			font-size: 1.6rem;
+			font-style: italic;
+			color: #fff;
+			letter-spacing: 1.5px;
+			opacity: 0.8;
+		}
+	}
 }
 
 @import './medium';

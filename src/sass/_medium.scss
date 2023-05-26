@@ -42,7 +42,7 @@
 			background-color: $black-color;
 			width: 50%;
 			background-image: url('/dist/img/about-big.jpg');
-			background-size: contain;
+			background-size: cover;
 			i {
 				position: absolute;
 				top: 20px;
@@ -123,6 +123,25 @@
 		}
 		&__righ-txt {
 			width: 100%;
+		}
+	}
+
+	.contact {
+		&__header {
+			margin-top: 2em;
+			margin-left: 2em;
+			font-size: 4rem;
+		}
+		&__img {
+			width: 60%;
+		}
+		.contact-form {
+			width: 40%;
+		}
+		.contact-box {
+			label {
+				font-size: 1.8rem;
+			}
 		}
 	}
 }

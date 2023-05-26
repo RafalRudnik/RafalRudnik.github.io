@@ -6,6 +6,8 @@ const navMobile = document.querySelector('.nav-mobile');
 const navMobileItems = document.querySelectorAll('.nav__link-m');
 const headerItem = document.querySelector('.header__main-txt');
 const work = document.querySelector('.work');
+const contact = document.querySelector('.contact');
+const aboutImg = document.querySelector('.about__left');
 
 gsap.fromTo(
 	work.children,
@@ -27,6 +29,44 @@ gsap.fromTo(
 );
 
 //stagger to jest opoznienie kazdego kolejnego elementu
+
+gsap.fromTo(
+	contact.children,
+	{ y: '+=100', opacity: 0 },
+	{
+		y: 0,
+		opacity: 1,
+		stagger: 0.4,
+		duration: 2,
+		ease: 'easeInOut',
+		scrollTrigger: {
+			trigger: contact,
+			start: 'top 20%',
+			// end: 'bottom', //gdzie ma sie skonczyc
+			// scrub: true, //scroll dziala w obie strony
+			// markers: true,
+		},
+	}
+);
+
+gsap.fromTo(
+	aboutImg,
+	{ x: '-=200', opacity: .9 },
+	{
+		x: 0,
+		opacity: 1,
+		stagger: 0.2,
+		duration: 2,
+		ease: 'easeInOut',
+		scrollTrigger: {
+			trigger: aboutImg,
+			start: 'top 50%',
+			// end: 'bottom', //gdzie ma sie skonczyc
+			scrub: true, //scroll dziala w obie strony
+			// markers: true,
+		},
+	}
+);
 
 const handleNav = () => {
 	navBtn.classList.toggle('is-active');
