@@ -60,7 +60,7 @@ gsap.fromTo(
 		ease: 'easeInOut',
 		scrollTrigger: {
 			trigger: aboutImg,
-			start: 'top 60%',
+			start: 'top 100%',
 			end: 'top 20%', //gdzie ma sie skonczyc
 			scrub: true, //scroll dziala w obie strony
 			// markers: true,
@@ -80,7 +80,7 @@ gsap.fromTo(
 		scrollTrigger: {
 			trigger: aboutImg,
 			start: 'top -50%',
-			end: 'top -90%', //gdzie ma sie skonczyc
+			end: 'top -100%', //gdzie ma sie skonczyc
 			scrub: true, //scroll dziala w obie strony
 			// markers: true,
 		},

@@ -211,6 +211,7 @@ header::after {
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
+		opacity: 0;
 
 		&::after {
 			content: '';
