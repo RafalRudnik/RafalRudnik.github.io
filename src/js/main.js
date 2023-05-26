@@ -60,10 +60,29 @@ gsap.fromTo(
 		ease: 'easeInOut',
 		scrollTrigger: {
 			trigger: aboutImg,
-			start: 'top 50%',
+			start: 'top 60%',
 			end: 'top 20%', //gdzie ma sie skonczyc
 			scrub: true, //scroll dziala w obie strony
-			markers: true,
+			// markers: true,
+		},
+	}
+);
+
+gsap.fromTo(
+	aboutImg,
+	{ x: 0, opacity: 1 },
+	{
+		x: '-=300',
+		opacity: 0.9,
+		stagger: 0.2,
+		duration: 1,
+		ease: 'easeInOut',
+		scrollTrigger: {
+			trigger: aboutImg,
+			start: 'top -50%',
+			end: 'top -90%', //gdzie ma sie skonczyc
+			scrub: true, //scroll dziala w obie strony
+			// markers: true,
 		},
 	}
 );
