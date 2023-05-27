@@ -41,11 +41,12 @@ textarea {
 
 .wrapper {
 	display: flex;
-	align-items: center;
-	justify-items: center;
+	align-items: flex-start;
+	justify-content: space-around;
 	flex-wrap: wrap;
+	margin: 0 auto;
 	max-width: 1600px;
-	height: 100%;
+	min-height: 100vh;
 	background-color: #fff;
 }
 
@@ -103,6 +104,7 @@ header::after {
 		letter-spacing: 2px;
 		font-size: 5rem;
 		font-weight: 300;
+		text-shadow: 1px 1px 3px $black-color;
 		span {
 			display: block;
 		}
@@ -279,6 +281,43 @@ header::after {
 .work {
 	padding: 8em 0em;
 	min-height: 100vh;
+	.work-card {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		&__title {
+			width: 90%;
+			margin-bottom: 1em;
+			h2 {
+				font-family: 'Nova Slim', cursive;
+				margin: 0.5em 0em;
+			}
+			hr {
+				color: $grey-main;
+				opacity: 0.5;
+			}
+			small {
+				color: $small;
+				font-size: 1.2rem;
+				margin-bottom: 0.5em;
+			}
+		}
+		&__img {
+			overflow: hidden;
+			margin-top: 1em;
+			margin-bottom: 2em;
+			&-img {
+				width: 100%;
+				filter: grayscale(1);
+				transition: scale 0.3s, filter 0.3s;
+			}
+			&-img:hover {
+				scale: 1.1;
+				filter: grayscale(0);
+			}
+		}
+	}
 }
 
 // CONTACT

@@ -8,6 +8,8 @@ const headerItem = document.querySelector('.header__main-txt');
 const work = document.querySelector('.work');
 const contact = document.querySelector('.contact');
 const aboutImg = document.querySelector('.about__left');
+const workCardLeft = document.querySelectorAll('.work-card-left');
+const workCardRight = document.querySelectorAll('.work-card-right');
 
 gsap.fromTo(
 	work.children,
@@ -86,6 +88,88 @@ gsap.fromTo(
 		},
 	}
 );
+
+workCardLeft.forEach((leftCard) => {
+	gsap.fromTo(
+		leftCard,
+		{ x: '-=200', y: '+=300', opacity: 0.6 },
+		{
+			x: 0,
+			y: 0,
+			opacity: 1,
+			stagger: 0.2,
+			duration: 1,
+			ease: 'easeInOut',
+			scrollTrigger: {
+				trigger: leftCard,
+				start: 'top 110%',
+				end: 'top 40%', //gdzie ma sie skonczyc
+				scrub: true, //scroll dziala w obie strony
+				// markers: true,
+			},
+		}
+	);
+	gsap.fromTo(
+		leftCard,
+		{ x: 0, y: 0, opacity: 1 },
+		{
+			x: '-=200',
+			y: '-=300',
+			opacity: 0.6,
+			stagger: 0.2,
+			duration: 1,
+			ease: 'easeInOut',
+			scrollTrigger: {
+				trigger: leftCard,
+				start: 'top 10%',
+				end: 'top -80%', //gdzie ma sie skonczyc
+				scrub: true, //scroll dziala w obie strony
+				// markers: true,
+			},
+		}
+	);
+});
+
+workCardRight.forEach((rightCard) => {
+	gsap.fromTo(
+		rightCard,
+		{ x: '+=200', y: '+=300', opacity: 0.6 },
+		{
+			x: 0,
+			y: 0,
+			opacity: 1,
+			stagger: 0.2,
+			duration: 1,
+			ease: 'easeInOut',
+			scrollTrigger: {
+				trigger: rightCard,
+				start: 'top 110%',
+				end: 'top 40%', //gdzie ma sie skonczyc
+				scrub: true, //scroll dziala w obie strony
+				// markers: true,
+			},
+		}
+	);
+	gsap.fromTo(
+		rightCard,
+		{ x: 0, y: 0, opacity: 1 },
+		{
+			x: '+=200',
+			y: '-=300',
+			opacity: 0.6,
+			stagger: 0.2,
+			duration: 1,
+			ease: 'easeInOut',
+			scrollTrigger: {
+				trigger: rightCard,
+				start: 'top 10%',
+				end: 'top -80%', //gdzie ma sie skonczyc
+				scrub: true, //scroll dziala w obie strony
+				// markers: true,
+			},
+		}
+	);
+});
 
 const handleNav = () => {
 	navBtn.classList.toggle('is-active');
