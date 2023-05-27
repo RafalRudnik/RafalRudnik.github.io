@@ -121,7 +121,7 @@ workCardLeft.forEach((leftCard) => {
 			ease: 'easeInOut',
 			scrollTrigger: {
 				trigger: leftCard,
-				start: 'top 10%',
+				start: 'top 0%',
 				end: 'top -80%', //gdzie ma sie skonczyc
 				scrub: true, //scroll dziala w obie strony
 				// markers: true,
@@ -162,7 +162,7 @@ workCardRight.forEach((rightCard) => {
 			ease: 'easeInOut',
 			scrollTrigger: {
 				trigger: rightCard,
-				start: 'top 10%',
+				start: 'top -10%',
 				end: 'top -80%', //gdzie ma sie skonczyc
 				scrub: true, //scroll dziala w obie strony
 				// markers: true,
