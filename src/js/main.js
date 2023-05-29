@@ -65,7 +65,7 @@ gsap.fromTo(
 		ease: 'easeInOut',
 		scrollTrigger: {
 			trigger: aboutImg,
-			start: 'top 120%',
+			start: 'top 100%',
 			end: 'top 20%', //gdzie ma sie skonczyc
 			scrub: true, //scroll dziala w obie strony
 			// markers: true,
@@ -95,7 +95,7 @@ gsap.fromTo(
 workCardLeft.forEach((leftCard) => {
 	gsap.fromTo(
 		leftCard,
-		{ x: '-=200', y: '+=300', opacity: 0.6 },
+		{ x: '-=200', y: '+=300', opacity: 0.3 },
 		{
 			x: 0,
 			y: 0,
@@ -105,7 +105,7 @@ workCardLeft.forEach((leftCard) => {
 			ease: 'easeInOut',
 			scrollTrigger: {
 				trigger: leftCard,
-				start: 'top 130%',
+				start: 'top 120%',
 				end: 'top 40%', //gdzie ma sie skonczyc
 				scrub: true, //scroll dziala w obie strony
 				// markers: true,
@@ -118,7 +118,7 @@ workCardLeft.forEach((leftCard) => {
 		{
 			x: '-=200',
 			y: '-=300',
-			opacity: 0.6,
+			opacity: 0.3,
 			stagger: 0.2,
 			duration: 1,
 			ease: 'easeInOut',
@@ -136,7 +136,7 @@ workCardLeft.forEach((leftCard) => {
 workCardRight.forEach((rightCard) => {
 	gsap.fromTo(
 		rightCard,
-		{ x: '+=200', y: '+=300', opacity: 0.6 },
+		{ x: '+=200', y: '+=300', opacity: 0.3 },
 		{
 			x: 0,
 			y: 0,
@@ -146,7 +146,7 @@ workCardRight.forEach((rightCard) => {
 			ease: 'easeInOut',
 			scrollTrigger: {
 				trigger: rightCard,
-				start: 'top 140%',
+				start: 'top 115%',
 				end: 'top 40%', //gdzie ma sie skonczyc
 				scrub: true, //scroll dziala w obie strony
 				// markers: true,
@@ -159,7 +159,7 @@ workCardRight.forEach((rightCard) => {
 		{
 			x: '+=200',
 			y: '-=300',
-			opacity: 0.6,
+			opacity: 0.3,
 			stagger: 0.2,
 			duration: 1,
 			ease: 'easeInOut',

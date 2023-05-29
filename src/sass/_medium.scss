@@ -129,8 +129,15 @@
 	.work {
 		.work-card {
 			width: 60%;
+			&__img {
+				height: 400px;
+			}
 		}
-
+		&__more {
+			.workBtn {
+				width: 20%;
+			}
+		}
 	}
 
 	.contact {
@@ -141,6 +148,7 @@
 		}
 		&__img {
 			width: 60%;
+			max-width: 1200px;
 		}
 		.contact-form {
 			width: 40%;

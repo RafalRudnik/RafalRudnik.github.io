@@ -311,10 +311,14 @@ header::after {
 		}
 		&__img {
 			overflow: hidden;
+			height: 300px;
 			margin-top: 1em;
 			margin-bottom: 2em;
+			box-shadow: 2px 2px 3px $small;
 			&-img {
+				object-fit: fill;
 				width: 100%;
+				height: 100%;
 				filter: grayscale(1);
 				transition: scale 0.3s, filter 0.3s;
 			}
@@ -324,8 +328,30 @@ header::after {
 			}
 		}
 	}
-	.workBtn {
-		width: 40%;
+	&__more {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1600px;
+		height: 200px;
+		background-color: #fff;
+		.workBtn {
+			padding: 1em 2em;
+			font-size: 1.8rem;
+			width: 30%;
+			color: $black-color;
+			border: 1px solid $black-color;
+			border-radius: 8px;
+			background-color: transparent;
+			cursor: pointer;
+			transition: color 0.3s, background-color 0.3s;
+			&:hover {
+				color: $black-color;
+				background-color: $grey-main;
+			}
+		}
 	}
 }
 
@@ -335,8 +361,9 @@ header::after {
 	position: relative;
 	min-height: 100vh;
 	padding-bottom: 8em;
-	background-color: black;
+	background-color: $black-color;
 	text-align: center;
+	overflow: hidden;
 	&__card {
 		position: relative;
 		display: flex;
@@ -435,17 +462,14 @@ header::after {
 		}
 	}
 	.msg-rodo {
-		padding: 4em 0.8em;
-		font-size: 1rem;
-		color: $small;
-	}
-	hr {
 		position: absolute;
-		bottom: 10px;
+		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
-		width: 80%;
-		opacity: 0.2;
+		padding: 0.8em;
+		font-size: 1rem;
+		width: 100%;
+		color: $small;
 	}
 
 	.msg-status {
@@ -468,10 +492,6 @@ header::after {
 	.error {
 		display: flex;
 		background-color: hsl(9, 100%, 64%);
-	}
-
-	.errorMsg {
-		color: #fff;
 	}
 }
 

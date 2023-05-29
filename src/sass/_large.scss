@@ -42,8 +42,12 @@
 					font-size: 1.6rem;
 				}
 			}
-			&__img {
-				height: 400px;
+		}
+		&__more {
+			.workBtn {
+				
+				width: 15%;
+			
 			}
 		}
 	}
@@ -64,22 +68,6 @@
 		&__right-desc {
 			font-size: 1.8rem;
 			line-height: 3rem;
-		}
-	}
-	.work {
-		.work-card {
-			&::after {
-				position: absolute;
-				content: '';
-				right: -40px;
-				top: 38%;
-				width: 40px;
-				height: 50%;
-				background-color: $hamburger;
-				border-top-right-radius: 8px;
-				border-bottom-right-radius: 8px;
-				box-shadow: 2px 2px 4px $black-color;
-			}
 		}
 	}
 }
