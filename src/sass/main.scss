@@ -281,6 +281,10 @@ header::after {
 // WORK
 
 .work {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	padding: 8em 0em;
 	min-height: 100vh;
 	.work-card {
@@ -319,6 +323,9 @@ header::after {
 				filter: grayscale(0);
 			}
 		}
+	}
+	.workBtn {
+		width: 40%;
 	}
 }
 
