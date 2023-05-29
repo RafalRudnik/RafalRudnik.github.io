@@ -12,7 +12,37 @@ const workCardLeft = document.querySelectorAll('.work-card-left');
 const workCardRight = document.querySelectorAll('.work-card-right');
 const footerYear = document.querySelector('.footer__year');
 const msgStatus = document.querySelector('.msg-status');
+const workBtn = document.querySelector('.workBtn');
 
+// LOADING PAGE SPANS
+
+const loadingFirstSpan = document.querySelector('.loading-page-one');
+const loadingSecondSpan = document.querySelector('.loading-page-two');
+const loadingThirdSpan = document.querySelector('.loading-page-third');
+const loadingFourthSpan = document.querySelector('.loading-page-fourth');
+
+// =================
+
+const handleWelcomeAnim = () => {
+	loadingFirstSpan.style.display = 'block';
+	setTimeout(() => {
+		loadingFirstSpan.style.display = 'none';
+		loadingSecondSpan.style.display = 'block';
+	}, 500);
+	setTimeout(() => {
+		loadingSecondSpan.style.display = 'none';
+		loadingThirdSpan.style.display = 'block';
+	}, 1000);
+	setTimeout(() => {
+		loadingThirdSpan.style.display = 'none';
+		loadingFourthSpan.style.display = 'block';
+	}, 1500);
+	setTimeout(() => {
+		loadingFourthSpan.style.display = 'none';
+		loadingAnim.style.display = 'none';
+		headerItem.classList.add('header__main-txt-mainAnim');
+	}, 2000);
+};
 
 gsap.fromTo(
 	work.children,
@@ -244,13 +274,10 @@ if (document.location.search === '?mail_status=error') {
 
 // =============================================================
 
-
-
+handleWelcomeAnim();
 handleCurrentYear();
 navBtn.addEventListener('click', handleNav);
 navBtn.addEventListener('mouseenter', navBtnAnimation);
 navMobileItems.forEach((item) => item.addEventListener('click', handleNav));
 window.addEventListener('scroll', handleShowBurger);
 window.addEventListener('scroll', handleHeaderAnim);
-window.addEventListener('scroll', handleObserver);
-sendBtn.addEventListener('click', checkMail);

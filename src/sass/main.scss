@@ -83,8 +83,53 @@ header::after {
 }
 
 .loading-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
-	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $black-color;
+	font-size: 5rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: $grey-main;
+	z-index: 200;
+	span {
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: -20px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 15px;
+			height: 15px;
+			background-color: #fff;
+			border-radius: 50%;
+			z-index: 200;
+		}
+	}
+	.loading-page-one {
+		display: none;
+	}
+	.loading-page-two {
+		display: none;
+	}
+	.loading-page-third {
+		display: none;
+	}
+	.loading-page-fourth {
+		display: none;
+	}
+}
+
+.showSpan {
+	display: block;
+	z-index: 200;
 }
 
 .arrow {
@@ -93,7 +138,7 @@ header::after {
 	bottom: 0px;
 	color: $grey-main;
 	font-size: 3rem;
-	animation: bounce-top 4s both;
+	animation: bounce-top 4s 2s both;
 }
 
 .header__main-txt {
@@ -125,6 +170,7 @@ header::after {
 .header__main-txt-mainAnim {
 	animation: headAnim 1s 0s linear both;
 }
+
 
 .header__main-txt-anim {
 	animation: headAnimScroll 1s 0s linear both;
@@ -332,6 +378,7 @@ header::after {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		flex-direction: column;
 		margin: 0 auto;
 		width: 100%;
 		max-width: 1600px;
@@ -346,12 +393,15 @@ header::after {
 			border-radius: 8px;
 			background-color: transparent;
 			cursor: pointer;
-			transition: color 0.3s, background-color 0.3s;
+			transition: background-color 0.3s;
 			&:hover {
-				color: $black-color;
 				background-color: $grey-main;
 			}
 		}
+	}
+	&__more-info {
+		display: block;
+		padding: 0.5em;
 	}
 }
 
