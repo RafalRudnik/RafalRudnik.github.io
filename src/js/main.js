@@ -10,6 +10,9 @@ const contact = document.querySelector('.contact');
 const aboutImg = document.querySelector('.about__left');
 const workCardLeft = document.querySelectorAll('.work-card-left');
 const workCardRight = document.querySelectorAll('.work-card-right');
+const footerYear = document.querySelector('.footer__year');
+const msgStatus = document.querySelector('.msg-status');
+
 
 gsap.fromTo(
 	work.children,
@@ -62,7 +65,7 @@ gsap.fromTo(
 		ease: 'easeInOut',
 		scrollTrigger: {
 			trigger: aboutImg,
-			start: 'top 100%',
+			start: 'top 120%',
 			end: 'top 20%', //gdzie ma sie skonczyc
 			scrub: true, //scroll dziala w obie strony
 			// markers: true,
@@ -102,7 +105,7 @@ workCardLeft.forEach((leftCard) => {
 			ease: 'easeInOut',
 			scrollTrigger: {
 				trigger: leftCard,
-				start: 'top 110%',
+				start: 'top 130%',
 				end: 'top 40%', //gdzie ma sie skonczyc
 				scrub: true, //scroll dziala w obie strony
 				// markers: true,
@@ -143,7 +146,7 @@ workCardRight.forEach((rightCard) => {
 			ease: 'easeInOut',
 			scrollTrigger: {
 				trigger: rightCard,
-				start: 'top 110%',
+				start: 'top 140%',
 				end: 'top 40%', //gdzie ma sie skonczyc
 				scrub: true, //scroll dziala w obie strony
 				// markers: true,
@@ -214,9 +217,40 @@ const handleHeaderAnim = () => {
 	}
 };
 
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	footerYear.textContent = year;
+};
+
+// ======================= FORMULARZ MAILOWY =========================
+
+if (document.location.search === '?mail_status=sent') {
+	msgStatus.classList.add('success');
+	msgStatus.textContent = 'Wiadomość wysłana!';
+
+	setTimeout(() => {
+		msgStatus.classList.remove('success');
+	}, 3000);
+}
+
+if (document.location.search === '?mail_status=error') {
+	msgStatus.classList.add('error');
+	msgStatus.textContent = 'Wystąpił błąd.';
+
+	setTimeout(() => {
+		msgStatus.classList.remove('error');
+	}, 3000);
+}
+
+// =============================================================
+
+
+
+handleCurrentYear();
 navBtn.addEventListener('click', handleNav);
 navBtn.addEventListener('mouseenter', navBtnAnimation);
 navMobileItems.forEach((item) => item.addEventListener('click', handleNav));
 window.addEventListener('scroll', handleShowBurger);
 window.addEventListener('scroll', handleHeaderAnim);
 window.addEventListener('scroll', handleObserver);
+sendBtn.addEventListener('click', checkMail);

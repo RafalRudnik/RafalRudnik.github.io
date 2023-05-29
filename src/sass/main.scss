@@ -40,6 +40,7 @@ textarea {
 // }
 
 .wrapper {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -201,14 +202,14 @@ header::after {
 	justify-content: center;
 	align-items: center;
 	height: fit-content;
-	padding: 8em 0em;
+	padding-top: 8em;
 	background-color: $grey-main;
 	overflow: hidden;
 	&__left {
 		position: relative;
 		width: 100%;
 		min-height: 100vh;
-		background-color: rgb(20, 20, 20);
+		background-color: $black-color;
 		background-image: url('/dist/img/about-sm.jpg');
 		background-position: center;
 		background-size: contain;
@@ -327,6 +328,7 @@ header::after {
 	min-height: 100vh;
 	padding-bottom: 8em;
 	background-color: black;
+	text-align: center;
 	&__card {
 		position: relative;
 		display: flex;
@@ -423,6 +425,60 @@ header::after {
 			letter-spacing: 1.5px;
 			opacity: 0.8;
 		}
+	}
+	.msg-rodo {
+		padding: 4em 0.8em;
+		font-size: 1rem;
+		color: $small;
+	}
+	hr {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80%;
+		opacity: 0.2;
+	}
+
+	.msg-status {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 50px;
+		padding: 30px;
+		width: 600px;
+		border-radius: 12px;
+		font-size: 24px;
+	}
+
+	.success {
+		display: flex;
+		background-color: hsl(143, 83%, 55%);
+	}
+
+	.error {
+		display: flex;
+		background-color: hsl(9, 100%, 64%);
+	}
+
+	.errorMsg {
+		color: #fff;
+	}
+}
+
+//FOOTER
+
+footer {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	height: 100px;
+	background-color: $grey-main;
+	color: $small;
+	p {
+		width: 100%;
+		text-align: center;
 	}
 }
 
