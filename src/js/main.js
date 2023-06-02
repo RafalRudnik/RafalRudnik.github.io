@@ -16,6 +16,7 @@ const workBtn = document.querySelector('.workBtn');
 
 // LOADING PAGE SPANS
 
+const body = document.querySelector('body');
 const loadingFirstSpan = document.querySelector('.loading-page-one');
 const loadingSecondSpan = document.querySelector('.loading-page-two');
 const loadingThirdSpan = document.querySelector('.loading-page-third');
@@ -24,6 +25,7 @@ const loadingFourthSpan = document.querySelector('.loading-page-fourth');
 // =================
 
 const handleWelcomeAnim = () => {
+	body.classList.add('stopScroll');
 	loadingFirstSpan.style.display = 'block';
 	setTimeout(() => {
 		loadingFirstSpan.style.display = 'none';
@@ -41,6 +43,7 @@ const handleWelcomeAnim = () => {
 		loadingFourthSpan.style.display = 'none';
 		loadingAnim.style.display = 'none';
 		headerItem.classList.add('header__main-txt-mainAnim');
+		body.classList.remove('stopScroll');
 	}, 2000);
 };
 
