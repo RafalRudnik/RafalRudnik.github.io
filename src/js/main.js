@@ -145,31 +145,31 @@ workCardLeft.forEach((leftCard) => {
 			},
 		}
 	);
-	gsap.fromTo(
-		leftCard,
-		{ x: 0, y: 0, opacity: 1 },
-		{
-			x: '-=200',
-			y: '-=300',
-			opacity: 0.3,
-			stagger: 0.2,
-			duration: 1,
-			ease: 'easeInOut',
-			scrollTrigger: {
-				trigger: leftCard,
-				start: 'top 0%',
-				end: 'top -80%', //gdzie ma sie skonczyc
-				scrub: true, //scroll dziala w obie strony
-				// markers: true,
-			},
-		}
-	);
+	// gsap.fromTo(
+	// 	leftCard,
+	// 	{ x: 0, y: 0, opacity: 1 },
+	// 	{
+	// 		x: '-=200',
+	// 		y: '-=300',
+	// 		opacity: 0.3,
+	// 		stagger: 0.2,
+	// 		duration: 1,
+	// 		ease: 'easeInOut',
+	// 		scrollTrigger: {
+	// 			trigger: leftCard,
+	// 			start: 'top 0%',
+	// 			end: 'top -80%', //gdzie ma sie skonczyc
+	// 			scrub: true, //scroll dziala w obie strony
+	// 			// markers: true,
+	// 		},
+	// 	}
+	// );
 });
 
 workCardRight.forEach((rightCard) => {
 	gsap.fromTo(
 		rightCard,
-		{ x: '+=200', y: '+=300', opacity: 0.3 },
+		{ x: '+=200', y: '+=100', opacity: 0.3 },
 		{
 			x: 0,
 			y: 0,
@@ -186,25 +186,25 @@ workCardRight.forEach((rightCard) => {
 			},
 		}
 	);
-	gsap.fromTo(
-		rightCard,
-		{ x: 0, y: 0, opacity: 1 },
-		{
-			x: '+=200',
-			y: '-=300',
-			opacity: 0.3,
-			stagger: 0.2,
-			duration: 1,
-			ease: 'easeInOut',
-			scrollTrigger: {
-				trigger: rightCard,
-				start: 'top -10%',
-				end: 'top -80%', //gdzie ma sie skonczyc
-				scrub: true, //scroll dziala w obie strony
-				// markers: true,
-			},
-		}
-	);
+	// gsap.fromTo(
+	// 	rightCard,
+	// 	{ x: 0, y: 0, opacity: 1 },
+	// 	{
+	// 		x: '+=200',
+	// 		y: '-=300',
+	// 		opacity: 0.3,
+	// 		stagger: 0.2,
+	// 		duration: 1,
+	// 		ease: 'easeInOut',
+	// 		scrollTrigger: {
+	// 			trigger: rightCard,
+	// 			start: 'top -10%',
+	// 			end: 'top -80%', //gdzie ma sie skonczyc
+	// 			scrub: true, //scroll dziala w obie strony
+	// 			// markers: true,
+	// 		},
+	// 	}
+	// );
 });
 
 const handleNav = () => {
